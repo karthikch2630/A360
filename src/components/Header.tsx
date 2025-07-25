@@ -31,7 +31,7 @@ const Header = () => {
       }`}
     >
       {/* Desktop Header */}
-      <div className=" md:flex items-center justify-between px-6 h-[100px] ">
+      <div className=" md:flex items-center justify-between px-6 h-[80px] ">
         <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <div className="px-14 py-2 ml-3 rounded">
             <img
@@ -42,7 +42,7 @@ const Header = () => {
           </div>
         </Link>
 
-        <nav className="flex space-x-6 pr-28 pt-6">
+        <nav className="flex space-x-6 pr-28 pt-4">
           {navItems.map((item) => (
             <Link
               key={item.path}
