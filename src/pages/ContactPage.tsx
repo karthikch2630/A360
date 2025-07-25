@@ -3,14 +3,14 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react";
 
 const ContactPage = () => {
   return (
-    <div className="pt-20">
+    <div className="pt-40 bg-black text-white sm:pl-24">
       {/* Hero Section */}
-      <section className=" bg-black">
+      <section className=" bg-black ">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              CONTACT <span className="text-gray-300">US</span>
-            </h1>
+            <h1 className="text-3xl md:text-6xl font-bold mb-6">
+            Contact <span className="text-white underline underline-offset-4">US</span>
+          </h1>
             <p className="text-xl text-gray-400 leading-relaxed">
               Ready to start your next architectural project? Get in touch with
               our team to discuss your vision and bring it to life.

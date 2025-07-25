@@ -108,8 +108,8 @@ const GalleryPage = () => {
       {/* Hero Section */}
       <section className="py-20 bg-black text-center">
         <div className="container mx-auto px-6">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            PROJECT <span className="text-white">GALLERY</span>
+          <h1 className="text-3xl md:text-6xl font-bold mb-6">
+            Project <span className="text-white underline underline-offset-4">GALLERY</span>
           </h1>
           <p className="text-xl text-gray-400">
             Visual showcase of our architectural achievements and design

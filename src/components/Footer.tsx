@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white pt-16 pb-2">
+    <footer className="bg-black text-white pt-16 pb-2 sm:pl-28">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -126,26 +126,27 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t border-gray-800  text-center"></div>
-      <div className="w-full text-center py-4 flex justify-center items-center gap-4 text-sm text-gray-500 hover:text-white transition-colors">
-  <p className="m-0">
-    © 2024 A360 Architecture. All rights reserved.
+      <div className="w-full text-center py-4 bg-black text-gray-400 text-[10px] sm:text-xs">
+  <p className="flex flex-wrap justify-center items-center gap-1 sm:gap-2">
+    <span>© 2024 A360 Architecture. All rights reserved.</span>
+    <span className="hidden sm:inline">|</span>
+    <a
+      href="https://www.tactadvertising.in"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-1 text-gray-400 hover:text-white transition-colors"
+    >
+      <span>Designed by</span>
+      <img
+        src="https://res.cloudinary.com/diqux3y0a/image/upload/v1752647568/tact_favicon_z3qdye.png"
+        alt="Tact Logo"
+        className="w-3 h-3 object-contain sm:w-4 sm:h-4"
+      />
+      <span>Tact Advertising</span>
+    </a>
   </p>
-  <span>|</span>
-  <a
-    href="https://www.tactadvertising.in"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-white transition-colors"
-  >
-    <span>Designed by</span>
-    <img
-      src="https://res.cloudinary.com/diqux3y0a/image/upload/v1752647568/tact_favicon_z3qdye.png"
-      alt="Tact Logo"
-      className="w-4 h-4 object-contain"
-    />
-    <span>Tact Advertising</span>
-  </a>
 </div>
+
 
     </footer>
   );

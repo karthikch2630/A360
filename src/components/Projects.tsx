@@ -70,7 +70,7 @@ const Projects = () => {
   const infiniteProjects = [...projects, ...projects];
 
   return (
-    <section className="py-20 bg-black relative overflow-hidden">
+    <section className="py-20 bg-black relative overflow-hidden sm:pl-28">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-12">
           OUR <span className="text-white">PROJECTS</span>

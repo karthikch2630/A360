@@ -8,7 +8,6 @@ const navItems = [
   { path: "/about", label: "ABOUT" },
   { path: "/services", label: "SERVICES" },
   { path: "/portfolio", label: "PORTFOLIO" },
-  { path: "/gallery", label: "GALLERY" },
   { path: "/contact", label: "CONTACT" },
 ];
 
@@ -33,8 +32,8 @@ const Header = () => {
     >
       {/* Desktop Header */}
       <div className="hidden md:flex items-center justify-between px-6 h-[100px] ">
-        <Link to="/">
-          <div className="bg-[#1a1a1a] px-4 py-2 ml-3 rounded">
+        <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          <div className="px-14 py-2 ml-3 rounded">
             <img
               src="https://res.cloudinary.com/diqux3y0a/image/upload/v1752649007/A360_Logo_ylazhu.svg"
               alt="Logo"
@@ -62,7 +61,7 @@ const Header = () => {
 
       {/* Mobile Header */}
       <div className="md:hidden flex items-center justify-between px-4 py-4 bg-[#1a1a1a]">
-        <Link to="/">
+        <Link to="#" >
           <img
             src="https://res.cloudinary.com/diqux3y0a/image/upload/v1751462340/a360_Studio_logo_White_q0tee6.png"
             alt="A360 Logo"

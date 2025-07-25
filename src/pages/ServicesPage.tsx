@@ -1,189 +1,161 @@
+import React, { useState } from "react";
+interface Service {
+  name: string;
+  iconPath: string;
+  description: string;
+}
 
-import {
-  Building2,
-  Palette,
-  MapPin,
-  Lightbulb,
-  Hammer,
-  PenTool,
-} from 'lucide-react';
+const services: Service[] = [
+  {
+    name: "Master Planning",
+    iconPath: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753436264/project_3671631_b2b71e.png",
+    description:
+      "Master planning provides a visionary roadmap for land use and infrastructure. We develop cohesive strategies that integrate urban growth, sustainability, transportation, green spaces, and community wellbeing. Our solutions ensure balanced development aligned with future needs, supporting smart cities, campuses, and industrial zones with scalable, long-term frameworks.",
+  },
+  {
+    name: "Urban Designing",
+    iconPath: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753436966/freepik__urban_planning_icon_stroke_abcdgc.png",
+    description:
+      "Urban design blends architecture, landscape, and public policy to shape the built environment. We design walkable neighborhoods, vibrant public spaces, and accessible urban layouts that enhance community interaction, mobility, and aesthetics. Our team ensures functionality and identity are embedded in every urban environment we shape.",
+  },
+  {
+    name: "Infrastructure Design",
+    iconPath: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753437098/structure_4260911_daegky.png",
+    description:
+      "We deliver end-to-end infrastructure design services, covering roads, bridges, drainage, and utilities. Our designs prioritize durability, sustainability, and efficiency. By integrating advanced technologies and regulatory standards, we build the foundation for resilient cities and smart communities prepared for future urban challenges.",
+  },
+  {
+    name: "Architecture Design",
+    iconPath: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753437281/architect-design_11695187_bghlxs.png",
+    description:
+      "Our architectural services span conceptualization to construction. We create inspiring, functional spaces that reflect client visions while considering environmental and cultural contexts. Whether for residential, commercial, or institutional needs, our designs achieve balance in aesthetics, utility, sustainability, and structural integrity for lasting impact.",
+  },
+  {
+    name: "Structural Design",
+    iconPath: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753438111/Structural_Engineering-512_km77hj.webp",
+    description:
+      "Structural design ensures safety, stability, and strength in construction. We use advanced analysis tools to create cost-effective and durable frameworks for buildings and infrastructure. Our solutions meet all relevant codes and are tailored to resist seismic, wind, and load stresses, ensuring project reliability.",
+  },
+  {
+    name: "Fire Design",
+    iconPath: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753438297/office_13218371_fi670q.png",
+    description:
+      "We develop fire protection strategies that align with local and international codes. Our services include sprinkler systems, smoke control, evacuation planning, and fire-resistant materials. With a focus on occupant safety and property protection, we create robust fire response frameworks for various building types.",
+  },
+  {
+    name: "Electrical Design",
+    iconPath: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753438414/station_13656574_bmesqc.png",
+    description:
+      "Our electrical design services include power distribution, lighting, backup systems, and energy efficiency solutions. We ensure optimal load management, safety, and compliance with codes. Our goal is to deliver intelligent electrical systems that support sustainability and meet modern operational demands across sectors.",
+  },
+  {
+    name: "Plumbing Design",
+    iconPath: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753438509/installation_15108244_pflpns.png",
+    description:
+      "We design efficient plumbing systems including water supply, drainage, sewage treatment, and rainwater harvesting. Our solutions reduce water wastage and maintenance while ensuring hygiene and regulatory compliance. Whether residential or commercial, we prioritize efficiency, safety, and environmental responsibility in every design.",
+  },
+  {
+    name: "HVAC Design",
+    iconPath: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753438601/hvac_16998745_bryncs.png",
+    description:
+      "Our HVAC design solutions ensure optimal thermal comfort and indoor air quality. We integrate energy-efficient heating, ventilation, and air conditioning systems tailored to building usage. Our designs are code-compliant, sustainable, and cost-effective—ideal for residential, commercial, and industrial environments.",
+  },
+  {
+    name: "Cost Estimation",
+    iconPath: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753438649/money_15129594_m1yfbo.png",
+    description:
+      "We provide detailed and accurate cost estimation services, helping clients manage budgets and avoid overruns. Our analysis covers material, labor, and contingency planning. With real-time market insights and software tools, we deliver transparent and reliable financial projections for informed decision-making.",
+  },
+];
 
-const ServicesPage = () => {
-  const services = [
-    {
-      icon: <Building2 className="w-12 h-12 text-white" />,
-      title: 'Architecture Design',
-      description:
-        'Complete architectural design services from concept to construction documentation.',
-      features: [
-        'Residential Design',
-        'Commercial Projects',
-        'Mixed-Use Developments',
-        'Sustainable Architecture',
-      ],
-    },
-    {
-      icon: <Palette className="w-12 h-12 text-white" />,
-      title: 'Interior Design',
-      description:
-        'Creating functional and beautiful interior spaces that reflect your vision.',
-      features: [
-        'Space Planning',
-        'Material Selection',
-        'Lighting Design',
-        'Custom Furniture',
-      ],
-    },
-    {
-      icon: <MapPin className="w-12 h-12 text-white" />,
-      title: 'Urban Planning',
-      description:
-        'Strategic planning for sustainable urban development and community growth.',
-      features: [
-        'Master Planning',
-        'Zoning Analysis',
-        'Community Engagement',
-        'Environmental Impact',
-      ],
-    },
-    {
-      icon: <Lightbulb className="w-12 h-12 text-white" />,
-      title: 'Design Consultation',
-      description:
-        'Expert advice and guidance for your architectural and design projects.',
-      features: [
-        'Feasibility Studies',
-        'Design Review',
-        'Code Compliance',
-        'Project Management',
-      ],
-    },
-    {
-      icon: <Hammer className="w-12 h-12 text-white" />,
-      title: 'Construction Admin',
-      description:
-        'Comprehensive construction administration and project oversight services.',
-      features: [
-        'Contract Administration',
-        'Site Supervision',
-        'Quality Control',
-        'Progress Monitoring',
-      ],
-    },
-    {
-      icon: <PenTool className="w-12 h-12 text-white" />,
-      title: '3D Visualization',
-      description:
-        'Bringing your projects to life with stunning 3D renderings and animations.',
-      features: [
-        'Architectural Rendering',
-        'Virtual Tours',
-        'Animation Services',
-        'Presentation Graphics',
-      ],
-    },
-  ];
+export default function ServicesPage() {
+  const [activeService, setActiveService] = useState(null);
 
   return (
-    <div className="pt-20 bg-black text-white">
-      {/* Hero Section */}
-      <section className="py-20 bg-black">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              OUR <span className="underline underline-offset-4">SERVICES</span>
-            </h1>
-            <p className="text-xl text-gray-400 leading-relaxed hover:text-white transition-colors duration-300">
-              Comprehensive architectural and design services tailored to bring
-              your vision to life with exceptional quality and innovation.
-            </p>
-          </div>
+    <div className="pt-20 bg-black text-white px-6 sm:pl-20">
+      {/* Services Section */}
+      <section className="py-20">
+        <h2 className="text-5xl font-bold text-center mb-12">
+          Our <span className="underline underline-offset-4">Services</span>
+        </h2>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto sm:py-12 px-4">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              onClick={() => setActiveService(service)}
+              className="bg-white/90 hover:bg-gray-800 p-8 rounded-2xl cursor-pointer transition-transform duration-300 transform hover:scale-105 shadow-lg hover:text-white"
+            >
+              {/* PNG iconPath */}
+              <div className="mb-6">
+                <img
+                  src={service.iconPath}
+                  alt={service.name}
+                  className="w-24 h-24 object-cover mx-auto"
+                />
+              </div>
+              {/* Title */}
+              <h3 className="text-2xl font-bold mb-4 text-black text-center">
+                {service.name}
+              </h3>
+              {/* Call to Action */}
+              <p className="text-gray-700 text-center">Click to learn more</p>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* Services Grid */}
-      <section className="py-20 bg-black">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="bg-gray-900 p-8 rounded-lg hover:bg-gray-800 transition-colors duration-300"
-              >
-                <div className="mb-6">{service.icon}</div>
-                <h3 className="text-2xl font-bold text-white mb-4">
-                  {service.title}
-                </h3>
-                <p className="text-gray-300 mb-6 leading-relaxed">
-                  {service.description}
-                </p>
-                <ul className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-gray-300">
-                      <div className="w-2 h-2 bg-white rounded-full mr-3"></div>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+      {/* Popup Card */}
+      {activeService && (
+        <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center px-4">
+          <div className="bg-gray-900 max-w-md w-full p-6 rounded-xl relative">
+            <button
+              className="absolute top-3 right-3 text-white"
+              onClick={() => setActiveService(null)}
+            >
+              ×
+            </button>
+            <div className="mb-4 text-center">
+              <img
+                src={activeService.iconPath}
+                alt={activeService.name}
+                className="w-24 h-24 mx-auto object-cover"
+              />
+            </div>
+            <h3 className="text-2xl font-bold mb-2">{activeService.name}</h3>
+            <p className="text-gray-300 mb-4">{activeService.description}</p>
+            <button className="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition">
+              Learn More
+            </button>
           </div>
         </div>
-      </section>
+      )}
 
-      {/* Process Section */}
-      <section className="py-20 bg-black">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">
-              Our Process
-            </h2>
-            <p className="text-xl text-gray-400 max-w-2xl mx-auto hover:text-white transistion-colors duration-300">
-              We follow a structured approach to ensure every project meets the
-              highest standards.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-8">
-            {[
-              {
-                step: '01',
-                title: 'Discovery',
-                description: 'Understanding your needs and vision',
-              },
-              {
-                step: '02',
-                title: 'Design',
-                description: 'Creating innovative design solutions',
-              },
-              {
-                step: '03',
-                title: 'Development',
-                description: 'Refining and detailing the design',
-              },
-              {
-                step: '04',
-                title: 'Delivery',
-                description: 'Construction and project completion',
-              },
-            ].map((phase, index) => (
-              <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-black font-bold text-lg">
-                    {phase.step}
-                  </span>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  {phase.title}
-                </h3>
-                <p className="text-gray-300">{phase.description}</p>
+      {/* Process Diagram */}
+      <section className="py-20">
+        <h2 className="text-4xl font-bold text-center mb-12">
+          Our Design Process
+        </h2>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-10 max-w-6xl mx-auto">
+          {[
+            "Understanding Requirements",
+            "Concept Development",
+            "Design & Visualization",
+            "Detailed Engineering",
+            "Documentation & Delivery",
+          ].map((step, i) => (
+            <div key={i} className="flex flex-col items-center">
+              <div className="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center mb-2">
+                <span className="text-lg font-bold">{i + 1}</span>
               </div>
-            ))}
-          </div>
+              <p className="text-center text-sm max-w-[120px] text-gray-300">
+                {step}
+              </p>
+              {i < 4 && <div className="h-px w-10 bg-white hidden md:block" />}
+              {i < 4 && <div className="w-px h-10 bg-white md:hidden" />}
+            </div>
+          ))}
         </div>
       </section>
     </div>
   );
-};
-
-export default ServicesPage;
+}
