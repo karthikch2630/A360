@@ -19,7 +19,7 @@ const News = () => {
   ];
 
   return (
-    <section className="py-20 bg-black sm:pl-28">
+    <section className="py-20 bg-black sm:pl-36">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-12">
           CURRENT <span className="text-white">NEWS</span>

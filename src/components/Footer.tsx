@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white pt-16 pb-2 sm:pl-28">
+    <footer className="bg-black text-white pt-16 pb-2 sm:pl-36">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -64,7 +64,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="/services#architecture"
+                  href="/services"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Architecture
@@ -72,7 +72,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/services#interior-design"
+                  href="/services"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Interior Design
@@ -80,7 +80,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/services#urban-planning"
+                  href="/services"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Urban Planning
@@ -88,7 +88,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/services#consulting"
+                  href="/services"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Consulting

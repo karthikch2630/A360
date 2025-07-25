@@ -26,18 +26,18 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         scrolled ? "bg-[#1a1a1a]" : "bg-transparent"
       }`}
     >
       {/* Desktop Header */}
-      <div className="hidden md:flex items-center justify-between px-6 h-[100px] ">
+      <div className=" md:flex items-center justify-between px-6 h-[100px] ">
         <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <div className="px-14 py-2 ml-3 rounded">
             <img
               src="https://res.cloudinary.com/diqux3y0a/image/upload/v1752649007/A360_Logo_ylazhu.svg"
               alt="Logo"
-              className="w-28 h-28 object-contain"
+              className="w-28 h-28 object-contain sm:hidden"
             />
           </div>
         </Link>

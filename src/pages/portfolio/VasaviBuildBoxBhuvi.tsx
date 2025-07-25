@@ -40,7 +40,7 @@ const VasaviBuildBoxBhuvi = () => {
       </section>
 
       {/* Scrolling Images */}
-      <section className="bg-gray-100 py-20 px-4">
+      <section className=" py-20 px-4 bg-black">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
           {images.map((img, idx) => (
             <motion.div

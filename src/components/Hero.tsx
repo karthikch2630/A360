@@ -5,27 +5,27 @@ import { motion, AnimatePresence } from "framer-motion";
 const backgroundImages = [
   {
     url: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753445371/04_tp1czz.jpg",
-    name: "BuildBox jj Gardens",
+    name: ( <>BuildBox jj <br /> Gardens</>),
   },
   {
     url: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753445377/09_sswiep.jpg",
-    name: "Sahithi Comercial Complex",
+    name: ( <>Sahithi Comercial <br /> Complex</>),
   },
   {
     url: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753445372/05_mmqtcu.jpg",
-    name: "Navanaami Willow Greens",
+    name: (<>Navanaami Willow <br /> Greens</>),
   },
   {
     url: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753445368/06_sgov3z.jpg",
-    name: "MRS Renuka Residency",
+    name: (<> MRS Renuka <br /> Residency</>),
   },
   {
     url: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753445370/08_dpx2am.jpg",
-    name: "MMRDA Metro Station",
+    name: (<>MMRDA <br /> Metro Station</>),
   },
   {
     url: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753445375/02_x7k1g3.jpg",
-    name: "Vasavi BuildBox Bhuvi",
+    name: (<>Vasavi BuildBox <br /> Bhuvi</>),
   },
 ];
 
@@ -86,7 +86,7 @@ const Hero = () => {
       {/* Left Chevron */}
       <button
         onClick={prevImage}
-        className="absolute bottom-6 left-6 sm:bottom-8 sm:left-28 z-40 bg-black/40 text-white p-3 rounded-full hover:bg-white hover:text-black transition"
+        className="absolute bottom-6 left-6 sm:bottom-8 sm:left-40 z-40 bg-black/40 text-white p-3 rounded-full hover:bg-white hover:text-black transition"
         aria-label="Previous"
       >
         <ChevronsLeft />
@@ -110,7 +110,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 10 }}
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.6 }}
-            className="text-white text-2xl sm:text-4xl md:text-5xl font-bold tracking-wide drop-shadow-lg text-right sm:text-[18px] md:text-[24px] lg:text-[32px] xl:text-[40px]"
+            className="text-white text-2xl sm:text-4xl md:text-5xl font-semibold tracking-wide drop-shadow-lg text-right sm:text-[18px] md:text-[24px] lg:text-[32px] xl:text-[40px]"
           >
             {backgroundImages[currentImage].name}
           </motion.h1>

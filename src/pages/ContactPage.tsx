@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react";
 
 const ContactPage = () => {
   return (
-    <div className="pt-40 bg-black text-white sm:pl-24">
+    <div className="pt-40 bg-black text-white sm:pl-36">
       {/* Hero Section */}
       <section className=" bg-black ">
         <div className="container mx-auto px-6">

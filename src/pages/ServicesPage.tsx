@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
+
 interface Service {
   name: string;
   iconPath: string;
@@ -69,10 +71,10 @@ const services: Service[] = [
 ];
 
 export default function ServicesPage() {
-  const [activeService, setActiveService] = useState(null);
+  const [activeService, setActiveService] = useState<Service | null>(null);
 
   return (
-    <div className="pt-20 bg-black text-white px-6 sm:pl-20">
+    <div className="pt-20 bg-black text-white px-6 sm:pl-36">
       {/* Services Section */}
       <section className="py-20">
         <h2 className="text-5xl font-bold text-center mb-12">
@@ -81,9 +83,9 @@ export default function ServicesPage() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto sm:py-12 px-4">
           {services.map((service, index) => (
             <div
-              key={index}
+              key={index.toString()} // Explicitly convert index to string to resolve TypeScript error
               onClick={() => setActiveService(service)}
-              className="bg-white/90 hover:bg-gray-800 p-8 rounded-2xl cursor-pointer transition-transform duration-300 transform hover:scale-105 shadow-lg hover:text-white"
+              className="bg-white/90 hover:bg-gray-100 p-8 rounded-2xl cursor-pointer transition-transform duration-300 transform hover:scale-105 shadow-lg hover:text-white"
             >
               {/* PNG iconPath */}
               <div className="mb-6">
@@ -94,11 +96,17 @@ export default function ServicesPage() {
                 />
               </div>
               {/* Title */}
-              <h3 className="text-2xl font-bold mb-4 text-black text-center">
+              <h3 className="text-2xl font-bold mb-2 text-black text-center">
                 {service.name}
               </h3>
               {/* Call to Action */}
-              <p className="text-gray-700 text-center">Click to learn more</p>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-gray-800 text-white text-center px-4 rounded hover:bg-gray-700 transition-colors text-sm mx-auto block"
+              >
+                Click to learn more
+              </motion.button>
             </div>
           ))}
         </div>
@@ -123,9 +131,6 @@ export default function ServicesPage() {
             </div>
             <h3 className="text-2xl font-bold mb-2">{activeService.name}</h3>
             <p className="text-gray-300 mb-4">{activeService.description}</p>
-            <button className="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition">
-              Learn More
-            </button>
           </div>
         </div>
       )}
@@ -143,7 +148,7 @@ export default function ServicesPage() {
             "Detailed Engineering",
             "Documentation & Delivery",
           ].map((step, i) => (
-            <div key={i} className="flex flex-col items-center">
+            <div key={i.toString()} className="flex flex-col items-center">
               <div className="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center mb-2">
                 <span className="text-lg font-bold">{i + 1}</span>
               </div>

@@ -3,7 +3,7 @@ import { Users, Award, Target, CheckCircle } from "lucide-react";
 
 const AboutPage = () => {
   return (
-    <div className="pt-20 bg-black text-white sm:pl-24">
+    <div className="pt-20 bg-black text-white sm:pl-36">
       {/* Hero Section */}
       <section className="py-20 bg-black">
         <div className="container mx-auto px-6 text-center">
@@ -18,32 +18,32 @@ const AboutPage = () => {
 
       {/* Philosophy Section */}
       <section className="py-20 bg-gray-900">
-  <div className="container mx-auto px-6">
-    <div className="grid md:grid-cols-2 gap-10 items-center">
-      {/* Image Section */}
-      <div className="sm:w-[75%] sm:h-[75%] max-h-[500px] overflow-hidden rounded-lg shadow-lg">
-        <img
-          src="https://res.cloudinary.com/diqux3y0a/image/upload/v1753434032/40503_a9dzf8.jpg"
-          alt="Philosophy"
-          className="rounded-lg shadow-lg object-cover w-full h-full max-h-[500px]"
-        />
-      </div>
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            {/* Image Section */}
+            <div className="sm:w-[75%] sm:h-[75%] max-h-[500px] overflow-hidden rounded-lg shadow-lg">
+              <img
+                src="https://res.cloudinary.com/diqux3y0a/image/upload/v1753434032/40503_a9dzf8.jpg"
+                alt="Philosophy"
+                className="rounded-lg shadow-lg object-cover w-full h-full max-h-[500px]"
+              />
+            </div>
 
-      {/* Text Section */}
-      <div className="text-left">
-        <h2 className="text-4xl font-bold mb-4 hover:text-gray-300 transition duration-300">
-          Our Philosophy
-        </h2>
-        <p className="text-xl text-gray-400 mb-6 hover:text-white transition duration-300">
-          Our guiding philosophy centers on architectural honesty and the importance of creating enriching spatial experiences. We adopt a pragmatic approach that carefully considers the project's context, client aspirations, materials, and technological advancements to develop solutions that are both appropriate and meaningful.
-        </p>
-        <p className="text-xl text-gray-400 hover:text-white transition duration-300">
-          Emphasizing modern, tropical architecture, we aim to balance aesthetic appeal with functional excellence, respecting cultural and environmental nuances. By engaging with diverse communities and employing a multifaceted approach, a360studio is dedicated to developing culturally sensitive, evolving design solutions that foster authentic and impactful spatial experiences.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+            {/* Text Section */}
+            <div className="text-left">
+              <h2 className="text-4xl font-bold mb-4 hover:text-gray-300 transition duration-300">
+                Our Philosophy
+              </h2>
+              <p className="text-xl text-gray-400 mb-6 hover:text-white transition duration-300">
+                Our guiding philosophy centers on architectural honesty and the importance of creating enriching spatial experiences. We adopt a pragmatic approach that carefully considers the project's context, client aspirations, materials, and technological advancements to develop solutions that are both appropriate and meaningful.
+              </p>
+              <p className="text-xl text-gray-400 hover:text-white transition duration-300">
+                Emphasizing modern, tropical architecture, we aim to balance aesthetic appeal with functional excellence, respecting cultural and environmental nuances. By engaging with diverse communities and employing a multifaceted approach, a360studio is dedicated to developing culturally sensitive, evolving design solutions that foster authentic and impactful spatial experiences.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       {/* Leadership Section */}
@@ -60,7 +60,7 @@ const AboutPage = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Team Member Cards */}
-            {[ 
+            {[
               {
                 name: "Srikanth Sada",
                 role: "Principal Architect",

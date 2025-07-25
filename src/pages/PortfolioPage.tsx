@@ -1,44 +1,49 @@
-
- import React from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const projects = [
+interface Project {
+  id: number;
+  title: string;
+  image: string;
+}
+
+const projects: Project[] = [
   {
     id: 1,
     title: "Ananda Homes",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/v1752640685/01_1_-min_bnyubs.jpg",
+    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752640685/01_1_-min_bnyubs.jpg",
   },
   {
     id: 2,
     title: "Buildbox Gardens",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/v1752641172/View_04-min_it030l.jpg",
+    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752641172/View_04-min_it030l.jpg",
   },
   {
     id: 3,
     title: "Countryard Mansion",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/v1752641726/Final_03_1_-min_vycw6b.jpg",
+    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752641726/Final_03_1_-min_vycw6b.jpg",
   },
   {
     id: 4,
     title: "Scintilla Apartments",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/v1752642124/Final_4-min_io9eve.jpg",
+    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752642124/Final_4-min_io9eve.jpg",
   },
   {
     id: 5,
     title: "Vasavi BuildBox Bhuvi",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/v1752642403/Gate_With_Tower_14-5-23-min_vdwx7b.jpg",
+    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752642403/Gate_With_Tower_14-5-23-min_vdwx7b.jpg",
   },
   {
     id: 6,
     title: "Sahithi Complex",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/v1752643596/CXGS2864_i35rjp.jpg",
+    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752643596/CXGS2864_i35rjp.jpg",
   },
 ];
 
-const PortfolioPage = () => {
+const PortfolioPage: React.FC = () => {
   return (
-    <div className="pt-20 bg-black text-white sm:pl-28">
+    <div className="pt-20 bg-black text-white sm:pl-36">
       {/* Hero Section */}
       <motion.section
         className="py-16 sm:py-24 bg-black"
@@ -52,7 +57,7 @@ const PortfolioPage = () => {
               Our <span className="underline underline-offset-4 decoration-white/50">Portfolio</span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-400 leading-relaxed">
-              Discover our innovative architectural projects showcasing excellence and sustainable design.
+              At A360 Architecture, we believe that great design goes beyond aesthetics — it’s about purpose, innovation, and impact. Our portfolio showcases a diverse range of architectural projects, each thoughtfully crafted to harmonize with its environment while meeting the highest standards of functionality and sustainability. From contemporary residences and commercial spaces to eco-conscious developments, our work reflects a commitment to timeless design, technical excellence, and client-focused solutions. Explore how we bring ideas to life through architecture that inspires and endures.
             </p>
           </div>
         </div>
@@ -69,7 +74,7 @@ const PortfolioPage = () => {
         <div className="container mx-auto px-4 sm:px-8 lg:px-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {projects.map((project) => (
-              <Link to={`/portfolio/${project.title.replace(/\s+/g, "-")}`} key={project.id}>
+              <Link to={`/portfolio/${project.title.replace(/\s+/g, "-")}`} key={project.id.toString()}>
                 <motion.div
                   className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                   whileHover={{ scale: 1.03 }}
@@ -99,4 +104,4 @@ const PortfolioPage = () => {
   );
 };
 
-export default PortfolioPage; //
+export default React.memo(PortfolioPage);
