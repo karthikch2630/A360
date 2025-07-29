@@ -8,12 +8,26 @@ import ServicesPage from "./pages/ServicesPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ContactPage from "./pages/ContactPage";
 import ScrollToTop from "./components/ScrollToTop";
-import AnadaHomes from "./pages/portfolio/AnandaHomes";
-import BuildBoxGarden from "./pages/portfolio/BuildBoxGarden";
+import VasaviBuildDoxBhuvi from "./pages/portfolio/VasaviBuildDoxBhuvi";
+import BuildDoxGarden from "./pages/portfolio/BUILDOXJJGARDENS";
+import ScintillaApartments from "./pages/portfolio/SCINTILLAAPARTMENT";
+import NavaNaami from "./pages/portfolio/NavaNaami";
+import BigBullPub from "./pages/portfolio/BigBullPub";
 import CountryYardMansion from "./pages/portfolio/CountryYardMansion";
-import ScintillaApartments from "./pages/portfolio/ScintillaApartments";
-import VasaviBuildBoxBhuvi from "./pages/portfolio/VasaviBuildBoxBhuvi";
-import SahithiComplex from "./pages/portfolio/SahithiComplex";
+import Dwellings from "./pages/portfolio/Dwellings";
+import ChiralaResort from "./pages/portfolio/ChiralaResort";
+import AnadaHomes from "./pages/portfolio/AnandaHomes";
+import AsrMemorial from "./pages/portfolio/AsrMemorial";
+import RRHomes from "./pages/portfolio/RRHomes";
+import SahithiDPS from "./pages/portfolio/SahithiDPS";
+import SindhujaConstructions from "./pages/portfolio/SindhujaConstructions";
+import CRDAOffice from "./pages/portfolio/CRDAOffice";
+import PrasadCommercial from "./pages/portfolio/PrasadCommercial";
+import DSDwellings from "./pages/portfolio/DSDwellings";
+import PulsusCorpOffice from "./pages/portfolio/PULSUSCorpOffice";
+import SahitiCom from "./pages/portfolio/SahitiCom";
+
+
 
 function App() {
   return (
@@ -31,12 +45,26 @@ function App() {
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />           
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/portfolio/Ananda-Homes" element={<AnadaHomes />} />
-            <Route path="/portfolio/Buildbox-Gardens" element={<BuildBoxGarden />} />
-            <Route path="/portfolio/Countryard-Mansion" element={<CountryYardMansion />} />
-            <Route path="/portfolio/Scintilla-Apartments" element={<ScintillaApartments />} />
-            <Route path="/portfolio/Vasavi-BuildBox-Bhuvi" element={<VasaviBuildBoxBhuvi />} />
-            <Route path="/portfolio/Sahithi-Complex" element={<SahithiComplex />} />
+            <Route path="/portfolio/vasavibuildox-bhuvi" element={<VasaviBuildDoxBhuvi />} />
+            <Route path="/portfolio/buildox-jj-gardens" element={<BuildDoxGarden />} />
+            <Route path="/portfolio/scintilla-apartment" element={<ScintillaApartments />} />
+            <Route path="/portfolio/navanaami" element={<NavaNaami />} />
+            <Route path="/portfolio/big-bull-pub" element={<BigBullPub />} />
+            <Route path="/portfolio/courtyard-mansion" element={<CountryYardMansion />} />
+            <Route path="/portfolio/dwellings" element={<Dwellings />} />
+            <Route path="/portfolio/chirala-resort" element={<ChiralaResort />} />
+            <Route path="/portfolio/ananda-homes" element={<AnadaHomes />} />
+            <Route path="/portfolio/asr-memorial" element={<AsrMemorial />} />
+            <Route path="/portfolio/rr-homes" element={<RRHomes />} />
+            <Route path="/portfolio/sahiti-dps" element={<SahithiDPS />} />
+            <Route path="/portfolio/sindhuja-constructions" element={<SindhujaConstructions />} />
+            <Route path="/portfolio/crda-office" element={<CRDAOffice />} />
+            <Route path="/portfolio/prasad-commercial-building" element={<PrasadCommercial />} />
+            <Route path="/portfolio/ds-dwellings" element={<DSDwellings />} />
+            <Route path="/portfolio/pulsus-corporate-office" element={<PulsusCorpOffice />} />
+            <Route path="/portfolio/sahiti-commercial" element={<SahitiCom />} />
+            
+            
             {/* Add more portfolio routes as needed */}
           </Routes>
         </main>

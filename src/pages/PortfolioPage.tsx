@@ -11,34 +11,133 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Ananda Homes",
+    title: "VASAVIBUILDOX BHUVI",
     image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752640685/01_1_-min_bnyubs.jpg",
   },
   {
     id: 2,
-    title: "Buildbox Gardens",
+    title: "BUILDOX JJ GARDENS",
     image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752641172/View_04-min_it030l.jpg",
   },
   {
     id: 3,
-    title: "Countryard Mansion",
+    title: "SCINTILLA APARTMENT",
     image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752641726/Final_03_1_-min_vycw6b.jpg",
   },
   {
     id: 4,
-    title: "Scintilla Apartments",
+    title: "NAVANAAMI",
     image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752642124/Final_4-min_io9eve.jpg",
   },
   {
     id: 5,
-    title: "Vasavi BuildBox Bhuvi",
+    title: "BIG BULL PUB",
     image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752642403/Gate_With_Tower_14-5-23-min_vdwx7b.jpg",
   },
   {
     id: 6,
-    title: "Sahithi Complex",
+    title: "Courtyard mansion",
     image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752643596/CXGS2864_i35rjp.jpg",
   },
+  {
+    id: 7,
+    title: "Dwellings",
+    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752643596/CXGS2864_i35rjp.jpg",
+  },
+  {
+    id: 8,
+    title: "Chirala Resort",
+    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752643596/CXGS2864_i35rjp.jpg",
+  },
+  {
+    id: 9,
+    title: "ANANDA HOMES",
+    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752643596/CXGS2864_i35rjp.jpg",
+  },
+  {
+    id: 10,
+    title: "ASR MEMORIAL",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783065/v-2-grey_aktulx.jpg",
+  },
+  {
+    id: 11,
+    title: "RR HOMES",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783103/06-copy_hc2lmq.jpg",
+  },
+  {
+    id: 12,
+    title: "SAHITI DPS",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783126/CXGS2864_ppdzti.jpg",
+  },
+  {
+    id: 13,
+    title: "SINDHUJA CONSTRUCTIONS",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783173/5_fe5apm.jpg",
+  },
+  {
+    id: 14,
+    title: "CRDA OFFICE",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783217/SCENE-04_svfvwl.jpg",
+  },
+  {
+    id: 15,
+    title: "PRASAD COMMERCIAL BUILDING",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783258/c-11_ec7vzo.jpg",
+  },
+  {
+    id: 16,
+    title: "DS DWELLINGS",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783298/4-copy_niv5dv.jpg",
+  },
+  {
+    id: 17,
+    title: "PULSUS corporate office",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783346/WTFG4143_xqsxaz.jpg",
+  },
+  {
+    id: 18,
+    title: "SAHITI COMMERCIAL",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783368/GQAH1053_x5uqpa.jpg",
+  },
+  {
+    id: 19,
+    title: "RR FARMHOUSE",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783401/Front-Angle-View_gzbrhs.jpg",
+  },
+  {
+    id: 20,
+    title: "VINOD MALL",
+    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752643596/CXGS2864_i35rjp.jpg",
+  },
+  {
+    id: 21,
+    title: "GANGAVARAM PORT OFFICE",
+    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752643596/CXGS2864_i35rjp.jpg",
+  },
+  {
+    id: 22,
+    title: "OSR INFRA",
+    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752643596/CXGS2864_i35rjp.jpg",
+  },
+  {
+    id: 23,
+    title: "PERUPALEM beach front shiva temple",
+    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752643596/CXGS2864_i35rjp.jpg",
+  },
+  {
+    id: 24,
+    title: "DP VILLA",
+    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752643596/CXGS2864_i35rjp.jpg",
+  },
+  {
+    id: 25,
+    title: "YTD 450 SQYDS",
+    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752643596/CXGS2864_i35rjp.jpg",
+  },
+  
+
+  
+
 ];
 
 const PortfolioPage: React.FC = () => {
@@ -74,7 +173,7 @@ const PortfolioPage: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-8 lg:px-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {projects.map((project) => (
-              <Link to={`/portfolio/${project.title.replace(/\s+/g, "-")}`} key={project.id.toString()}>
+              <Link to={`/portfolio/${project.title.toLowerCase().replace(/\s+/g, "-")}`}key={project.id.toString()}>
                 <motion.div
                   className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                   whileHover={{ scale: 1.03 }}

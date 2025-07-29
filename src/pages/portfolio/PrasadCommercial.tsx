@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 
 const images = [
-  "https://res.cloudinary.com/diqux3y0a/image/upload/v1752641182/View_02-min_hqzx0p.jpg",
-  "https://res.cloudinary.com/diqux3y0a/image/upload/v1752641189/Club_House-min_h6ymz4.jpg",
-  "https://res.cloudinary.com/diqux3y0a/image/upload/v1752641146/Aerial_view_1-min_ygbxxu.jpg",
-  "https://res.cloudinary.com/diqux3y0a/image/upload/v1752641149/Aerial_View_2-min_skpetu.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783252/c-8_ervxad.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783255/c9_ycvdhl.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783249/c-7_wqf2fm.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783255/c9_ycvdhl.jpg",
 ];
 
-const BuildBoxGarden = () => {
+const PrasadCommercial = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to top on mount
   }, []);
@@ -21,7 +21,7 @@ const BuildBoxGarden = () => {
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1 }}
-          src="https://res.cloudinary.com/diqux3y0a/image/upload/v1752641172/View_04-min_it030l.jpg"
+          src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783258/c-11_ec7vzo.jpg"
           alt="Cover"
           className="h-full w-full object-cover"
         />
@@ -33,7 +33,7 @@ const BuildBoxGarden = () => {
             className="text-white text-4xl font-bold drop-shadow-md"
           >
             <h1 className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-black/60 text-white px-6 py-3 text-2xl font-semibold rounded-md shadow-lg">
-              BuildBox jj Gardens
+              Prasad Commercial Building
             </h1>
           </motion.h1>
         </div>
@@ -64,4 +64,4 @@ const BuildBoxGarden = () => {
   );
 };
 
-export default BuildBoxGarden;
+export default PrasadCommercial;

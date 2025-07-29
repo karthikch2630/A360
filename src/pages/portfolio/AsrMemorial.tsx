@@ -2,26 +2,27 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 
 const images = [
-  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782863/Aerial-01--21-11-23_nefjk2.jpg",
-  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782860/Final-06_bihohl.jpg",
-  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782859/Final-01-_1_mioqpe.jpg",
-
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783045/v-11-Interior_m1l1yd.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783062/v-1-grey-_1_kbnxus.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783043/v-10--interior_igswzd.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783041/v-4-grey_pwknpy.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783040/v-3-grey_xmkv07.jpg",
 ];
 
-const CountryYardMansion = () => {
+const AsrMemorial = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to top on mount
   }, []);
 
   return (
-    <div className="w-full overflow-x-hidden">
+    <div className="w-full overflow-x-hidden bg-black">
       {/* Fullscreen Cover Image */}
-      <section className="relative h-screen w-full">
+      <section className="relative h-screen w-full ">
         <motion.img
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1 }}
-          src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782861/Final-03-_1_dpdg2x.jpg"
+          src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783065/v-2-grey_aktulx.jpg"
           alt="Cover"
           className="h-full w-full object-cover"
         />
@@ -33,14 +34,14 @@ const CountryYardMansion = () => {
             className="text-white text-4xl font-bold drop-shadow-md"
           >
             <h1 className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-black/60 text-white px-6 py-3 text-2xl font-semibold rounded-md shadow-lg">
-              MRS Renukas Residency
+              ASR Memorial
             </h1>
           </motion.h1>
         </div>
       </section>
 
       {/* Scrolling Images */}
-      <section className=" py-20 px-4 bg-black">
+      <section className="py-20 px-4 bg-black/90">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
           {images.map((img, idx) => (
             <motion.div
@@ -51,7 +52,11 @@ const CountryYardMansion = () => {
               transition={{ duration: 0.8, delay: idx * 0.2 }}
               className="overflow-hidden rounded-lg shadow-lg"
             >
-              <img src={img} alt={`img-${idx}`} className="w-full h-auto object-cover" />
+              <img
+                src={img}
+                alt={`img-${idx}`}
+                className="w-full h-auto object-cover"
+              />
             </motion.div>
           ))}
         </div>
@@ -60,4 +65,4 @@ const CountryYardMansion = () => {
   );
 };
 
-export default CountryYardMansion;
+export default AsrMemorial;

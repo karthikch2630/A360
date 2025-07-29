@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 
 const images = [
-  "https://res.cloudinary.com/diqux3y0a/image/upload/v1752640686/03_1_-min_vcnizn.jpg",
-  "https://res.cloudinary.com/diqux3y0a/image/upload/v1752640685/01_1_-min_bnyubs.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783001/01-_1_vbe2hf.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782997/Aerial-View_cjwq8i.jpg",
 ];
 
 const AnadaHomes = () => {
@@ -19,7 +19,7 @@ const AnadaHomes = () => {
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1 }}
-          src="https://res.cloudinary.com/diqux3y0a/image/upload/v1753444157/Aerial_View-min_kl1n91.jpg"
+          src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782997/03-_1_vsdhhd.jpg"
           alt="Cover"
           className="h-full w-full object-cover"
         />

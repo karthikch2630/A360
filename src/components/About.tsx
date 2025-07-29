@@ -38,7 +38,7 @@ const About = () => {
           {/* Image */}
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+              src="istockphoto-1326999265-612x612.jpg"
               alt="Modern Office Interior"
               className="w-full h-96 object-cover rounded-lg shadow-2xl grayscale hover:grayscale-0 transform scale-100 hover:scale-105 transition duration-500"
             />

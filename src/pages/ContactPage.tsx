@@ -143,7 +143,7 @@ const ContactPage = () => {
                     <h3 className="text-xl font-semibold text-white mb-2">
                       Phone
                     </h3>
-                    <p className="text-gray-400">+91 7673989854</p>
+                    <p className="text-gray-400">+91 7013306457</p>
                   </div>
                 </div>
 
@@ -155,7 +155,7 @@ const ContactPage = () => {
                     <h3 className="text-xl font-semibold text-white mb-2">
                       Email
                     </h3>
-                    <p className="text-gray-400">a360studio.shiva@gmail.com</p>
+                    <p className="text-gray-400">a360studiohyd@gmail.com</p>
                   </div>
                 </div>
 
@@ -168,9 +168,9 @@ const ContactPage = () => {
                       Office Hours
                     </h3>
                     <p className="text-gray-400">
-                      Monday - Friday: 9:00 AM - 6:00 PM
+                      Monday - : 10:00 AM - 7:00 PM
                       <br />
-                      Saturday: 10:00 AM - 4:00 PM
+                      Saturday: 10:00 AM - 5:00 PM
                       <br />
                       Sunday: Closed
                     </p>

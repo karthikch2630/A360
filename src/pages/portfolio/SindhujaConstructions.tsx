@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 
 const images = [
-  "https://res.cloudinary.com/diqux3y0a/image/upload/v1752643596/CXGS2864_i35rjp.jpg",
-  "https://res.cloudinary.com/diqux3y0a/image/upload/v1752643596/YBAW8357_dqxlmr.jpg",
-
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783168/10_xrpcpg.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783166/11_wpoisf.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783171/12_th7w0c.jpg",
 ];
 
-const SahithiComplex = () => {
+const SindhujaConstructions = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to top on mount
   }, []);
@@ -20,7 +20,7 @@ const SahithiComplex = () => {
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1 }}
-          src="https://res.cloudinary.com/diqux3y0a/image/upload/v1752643596/QFHB8301_tembs0.jpg"
+          src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783173/5_fe5apm.jpg"
           alt="Cover"
           className="h-full w-full object-cover"
         />
@@ -32,7 +32,7 @@ const SahithiComplex = () => {
             className="text-white text-4xl font-bold drop-shadow-md"
           >
             <h1 className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-black/60 text-white px-6 py-3 text-2xl font-semibold rounded-md shadow-lg">
-              Sahithi Commercial Complex
+              Sindhuja Constructions
             </h1>
           </motion.h1>
         </div>
@@ -50,7 +50,11 @@ const SahithiComplex = () => {
               transition={{ duration: 0.8, delay: idx * 0.2 }}
               className="overflow-hidden rounded-lg shadow-lg"
             >
-              <img src={img} alt={`img-${idx}`} className="w-full h-auto object-cover" />
+              <img
+                src={img}
+                alt={`img-${idx}`}
+                className="w-full h-auto object-cover"
+              />
             </motion.div>
           ))}
         </div>
@@ -59,4 +63,4 @@ const SahithiComplex = () => {
   );
 };
 
-export default SahithiComplex;
+export default SindhujaConstructions;

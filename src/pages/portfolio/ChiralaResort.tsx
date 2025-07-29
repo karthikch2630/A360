@@ -2,13 +2,15 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 
 const images = [
-  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782863/Aerial-01--21-11-23_nefjk2.jpg",
-  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782860/Final-06_bihohl.jpg",
-  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782859/Final-01-_1_mioqpe.jpg",
-
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782962/01-_26_ky72ue.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782960/scene-12_zb20ts.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782955/scene-03_cpfmmh.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782954/scene-02_fsoad7.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782951/scene-01_f8fjkh.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782950/sambhasivaraocherala_yfgry7.jpg",
 ];
 
-const CountryYardMansion = () => {
+const Dwellings = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to top on mount
   }, []);
@@ -21,7 +23,7 @@ const CountryYardMansion = () => {
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1 }}
-          src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782861/Final-03-_1_dpdg2x.jpg"
+          src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782959/scene-07_uwr9jp.jpg"
           alt="Cover"
           className="h-full w-full object-cover"
         />
@@ -33,7 +35,7 @@ const CountryYardMansion = () => {
             className="text-white text-4xl font-bold drop-shadow-md"
           >
             <h1 className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-black/60 text-white px-6 py-3 text-2xl font-semibold rounded-md shadow-lg">
-              MRS Renukas Residency
+              Chirala Resort
             </h1>
           </motion.h1>
         </div>
@@ -51,7 +53,11 @@ const CountryYardMansion = () => {
               transition={{ duration: 0.8, delay: idx * 0.2 }}
               className="overflow-hidden rounded-lg shadow-lg"
             >
-              <img src={img} alt={`img-${idx}`} className="w-full h-auto object-cover" />
+              <img
+                src={img}
+                alt={`img-${idx}`}
+                className="w-full h-auto object-cover"
+              />
             </motion.div>
           ))}
         </div>
@@ -60,4 +66,4 @@ const CountryYardMansion = () => {
   );
 };
 
-export default CountryYardMansion;
+export default Dwellings;

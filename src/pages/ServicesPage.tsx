@@ -136,31 +136,17 @@ export default function ServicesPage() {
       )}
 
       {/* Process Diagram */}
-      <section className="py-20">
-        <h2 className="text-4xl font-bold text-center mb-12">
-          Our Design Process
-        </h2>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-10 max-w-6xl mx-auto">
-          {[
-            "Understanding Requirements",
-            "Concept Development",
-            "Design & Visualization",
-            "Detailed Engineering",
-            "Documentation & Delivery",
-          ].map((step, i) => (
-            <div key={i.toString()} className="flex flex-col items-center">
-              <div className="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center mb-2">
-                <span className="text-lg font-bold">{i + 1}</span>
-              </div>
-              <p className="text-center text-sm max-w-[120px] text-gray-300">
-                {step}
-              </p>
-              {i < 4 && <div className="h-px w-10 bg-white hidden md:block" />}
-              {i < 4 && <div className="w-px h-10 bg-white md:hidden" />}
-            </div>
-          ))}
-        </div>
-      </section>
+      <section className="py-20 px-4">
+  <h2 className="text-4xl font-bold text-center mb-12">
+    Our Design Process
+  </h2>
+  <img
+    src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1753790708/team-one-design-process-scaled_siafut.webp"
+    alt="A360 Design Process"
+    className="mx-auto w-full max-w-3xl h-auto rounded-md shadow-lg"
+  />
+</section>
+
     </div>
   );
 }

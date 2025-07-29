@@ -2,13 +2,14 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 
 const images = [
-  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782863/Aerial-01--21-11-23_nefjk2.jpg",
-  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782860/Final-06_bihohl.jpg",
-  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782859/Final-01-_1_mioqpe.jpg",
-
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783295/13-copy_em9bsd.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783285/14-copy_zpcamt.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783271/5-copy_z050od.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783273/12-copy_lgd28x.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783301/2_ld7jkw.jpg",
 ];
 
-const CountryYardMansion = () => {
+const DSDwellings = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to top on mount
   }, []);
@@ -21,7 +22,7 @@ const CountryYardMansion = () => {
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1 }}
-          src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782861/Final-03-_1_dpdg2x.jpg"
+          src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783298/4-copy_niv5dv.jpg"
           alt="Cover"
           className="h-full w-full object-cover"
         />
@@ -33,7 +34,7 @@ const CountryYardMansion = () => {
             className="text-white text-4xl font-bold drop-shadow-md"
           >
             <h1 className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-black/60 text-white px-6 py-3 text-2xl font-semibold rounded-md shadow-lg">
-              MRS Renukas Residency
+              DS Dwellings
             </h1>
           </motion.h1>
         </div>
@@ -51,7 +52,11 @@ const CountryYardMansion = () => {
               transition={{ duration: 0.8, delay: idx * 0.2 }}
               className="overflow-hidden rounded-lg shadow-lg"
             >
-              <img src={img} alt={`img-${idx}`} className="w-full h-auto object-cover" />
+              <img
+                src={img}
+                alt={`img-${idx}`}
+                className="w-full h-auto object-cover"
+              />
             </motion.div>
           ))}
         </div>
@@ -60,4 +65,4 @@ const CountryYardMansion = () => {
   );
 };
 
-export default CountryYardMansion;
+export default DSDwellings;
