@@ -38,7 +38,7 @@ const About = () => {
           {/* Image */}
           <div className="relative">
             <img
-              src="istockphoto-1326999265-612x612.jpg"
+              src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1753794273/aboutus_qkepo5.jpg"
               alt="Modern Office Interior"
               className="w-full h-96 object-cover rounded-lg shadow-2xl grayscale hover:grayscale-0 transform scale-100 hover:scale-105 transition duration-500"
             />
