@@ -8,7 +8,7 @@ const navItems = [
   { path: "/about", label: "ABOUT" },
   { path: "/services", label: "SERVICES" },
   { path: "/portfolio", label: "PORTFOLIO" },
-  { path: "/blogs", label: "BLOGS"},
+  { path: "/blogs", label: "BLOGS" },
   { path: "/contact", label: "CONTACT" },
 ];
 
@@ -31,9 +31,12 @@ const Header = () => {
         scrolled ? "bg-[#1a1a1a]" : "bg-transparent"
       }`}
     >
-      {/* Desktop Header */}
-      <div className=" md:flex items-center justify-between px-6 h-[80px] ">
-        <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+      {/* Desktop Header - hidden below md */}
+      <div className="hidden md:flex items-center justify-between px-6 h-[80px]">
+        <Link
+          to="/"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
           <div className="px-14 py-2 ml-3 rounded">
             <img
               src="https://res.cloudinary.com/diqux3y0a/image/upload/v1752649007/A360_Logo_ylazhu.svg"
@@ -60,9 +63,9 @@ const Header = () => {
         </nav>
       </div>
 
-      {/* Mobile Header */}
+      {/* Mobile & Tablet Header (shown on < md) */}
       <div className="md:hidden flex items-center justify-between px-4 py-4 bg-[#1a1a1a]">
-        <Link to="#" >
+        <Link to="/">
           <img
             src="https://res.cloudinary.com/diqux3y0a/image/upload/v1751462340/a360_Studio_logo_White_q0tee6.png"
             alt="A360 Logo"
@@ -75,7 +78,7 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Mobile Dropdown */}
+      {/* Mobile & Tablet Dropdown Nav */}
       {isOpen && (
         <div className="md:hidden absolute top-[72px] left-1/2 transform -translate-x-1/2 bg-[#1a1a1a] border border-white/10 rounded-lg shadow-md w-64 p-4 flex flex-col space-y-4 z-50">
           {navItems.map((item) => (
@@ -95,6 +98,7 @@ const Header = () => {
 
           {/* Social Icons */}
           <div className="flex justify-center space-x-4 pt-4 border-t border-white/10 mt-2">
+            {/* Facebook */}
             <a
               href="https://facebook.com"
               target="_blank"
@@ -105,6 +109,7 @@ const Header = () => {
                 <path d="M22 12a10 10 0 10-11.6 9.9v-7h-2v-3h2v-2c0-2 1.2-3 3-3 .9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2v1.7h2.6l-.4 3h-2.2v7A10 10 0 0022 12z" />
               </svg>
             </a>
+            {/* Instagram */}
             <a
               href="https://instagram.com"
               target="_blank"
@@ -115,6 +120,7 @@ const Header = () => {
                 <path d="M7.5 2C4.5 2 2 4.5 2 7.5v9C2 19.5 4.5 22 7.5 22h9c3 0 5.5-2.5 5.5-5.5v-9C22 4.5 19.5 2 16.5 2h-9zm0 2h9C18 4 20 6 20 8.5v7c0 2.5-2 4.5-4.5 4.5h-9C6 20 4 18 4 15.5v-7C4 6 6 4 7.5 4zm4.5 2.5A5 5 0 0012 17a5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm5.3-2a1.3 1.3 0 100 2.6 1.3 1.3 0 000-2.6z" />
               </svg>
             </a>
+            {/* LinkedIn */}
             <a
               href="https://linkedin.com"
               target="_blank"

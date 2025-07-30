@@ -66,18 +66,19 @@ const Hero = () => {
       <div className="absolute inset-0 z-0 h-full w-full overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.img
-            key={backgroundImages[currentImage].url}
-            src={backgroundImages[currentImage].url}
-            alt="Hero Background"
-            className="absolute inset-0 w-full h-full object-fill"
-            initial={{ opacity: 0, scale: 1.05, x: 20, y: 20 }}
-            animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
-            exit={{ opacity: 0, scale: 1.05, x: -20, y: -20 }}
-            transition={{
-              duration: 1.3, // synced with heading
-              ease: [0.43, 0.13, 0.23, 0.96],
-            }}
-          />
+  key={backgroundImages[currentImage].url}
+  src={backgroundImages[currentImage].url}
+  alt="Hero Background"
+  className="absolute inset-0 w-full h-full object-cover sm:object-fill"
+  initial={{ opacity: 0, scale: 1.05, x: 20, y: 20 }}
+  animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
+  exit={{ opacity: 0, scale: 1.05, x: -20, y: -20 }}
+  transition={{
+    duration: 1.3,
+    ease: [0.43, 0.13, 0.23, 0.96],
+  }}
+/>
+
         </AnimatePresence>
       </div>
 

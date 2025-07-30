@@ -12,8 +12,8 @@ const LeftSidebar = () => {
     <>
       {/* Desktop Sidebar */}
       <div className="hidden md:flex fixed top-0 left-0 h-screen w-36 bg-[#1a1a1a] z-50 flex-col items-center pb-3">
-        {/* Centered Logo */}
-        <div className="mb-6 hidden sm:block">
+        {/* Centered Logo - Hidden on mobile */}
+        <div className="mb-6 hidden md:block">
           <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <div className="rounded flex items-center justify-center z-10">
               <img
