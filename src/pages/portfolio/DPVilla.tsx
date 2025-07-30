@@ -2,11 +2,13 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 
 const images = [
-  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783406/Front-View_yoh6ik.jpg",
-  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783401/Front-Angle-View_gzbrhs.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784349/scene-08_vl7diu.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784336/scene-07_p4vff7.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784349/scene-08_vl7diu.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784336/scene-07_p4vff7.jpg",
 ];
 
-const RRFarmHouse = () => {
+const DPVilla = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to top on mount
   }, []);
@@ -19,7 +21,7 @@ const RRFarmHouse = () => {
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1 }}
-          src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783401/Front-Angle-View_gzbrhs.jpg"
+          src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784357/scene-0101-_2_zwtzh0.jpg"
           alt="Cover"
           className="h-full w-full object-cover"
         />
@@ -31,7 +33,7 @@ const RRFarmHouse = () => {
             className="text-white text-4xl font-bold drop-shadow-md"
           >
             <h1 className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-black/60 text-white px-6 py-3 text-2xl font-semibold rounded-md shadow-lg">
-              RR Farmhouse
+              DP Villa
             </h1>
           </motion.h1>
         </div>
@@ -62,4 +64,4 @@ const RRFarmHouse = () => {
   );
 };
 
-export default RRFarmHouse;
+export default DPVilla;

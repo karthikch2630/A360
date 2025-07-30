@@ -1,6 +1,35 @@
 import React from "react";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 
+const imageData = [
+  {
+    img: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782861/Final-03-_1_dpdg2x.jpg",
+  },
+  {
+    img: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782808/v1-_1_ni2obk.jpg",
+  },
+  {
+    img: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784336/scene-07_p4vff7.jpg",
+  },
+  {
+    img: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783344/TDVL9826_yo7rdx.jpg",
+  },
+  {
+    img: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783173/5_fe5apm.jpg",
+  },
+  {
+    img: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783380/IMMX9058_nprcvy.jpg",
+  },
+  {
+    img: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784169/silpa-commercial-_1_zw3nzt.jpg",
+  },
+  {
+   
+    img: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783255/c9_ycvdhl.jpg",
+  },
+];
+
+
 const ContactPage = () => {
   return (
     <div className="pt-40 bg-black text-white sm:pl-36">
@@ -9,8 +38,8 @@ const ContactPage = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-3xl md:text-6xl font-bold mb-6">
-            Contact <span className="text-white underline underline-offset-4">US</span>
-          </h1>
+              Contact <span className="text-white underline underline-offset-4">US</span>
+            </h1>
             <p className="text-xl text-gray-400 leading-relaxed">
               Ready to start your next architectural project? Get in touch with
               our team to discuss your vision and bring it to life.
@@ -193,6 +222,27 @@ const ContactPage = () => {
           </div>
         </div>
       </section>
+      <section className="bg-black py-12 overflow-hidden">
+        <h2 className="text-center text-white text-2xl font-bold mb-8">Our Projects</h2>
+
+        <div className="relative w-full overflow-hidden">
+          <div className="animate-slide flex gap-6 w-max">
+            {[...imageData, ...imageData].map((project, idx) => (
+              <div
+                key={idx}
+                className="w-64 h-64 flex-shrink-0 bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300"
+              >
+                <img
+                  src={project.img}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
     </div>
   );
 };

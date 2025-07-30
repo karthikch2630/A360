@@ -12,47 +12,47 @@ const projects: Project[] = [
   {
     id: 1,
     title: "VASAVIBUILDOX BHUVI",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752640685/01_1_-min_bnyubs.jpg",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782527/Aerial-View-2-15-5-23_iblkba.jpg",
   },
   {
     id: 2,
     title: "BUILDOX JJ GARDENS",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752641172/View_04-min_it030l.jpg",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782689/View-04_xfnfkg.jpg",
   },
   {
     id: 3,
     title: "SCINTILLA APARTMENT",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752641726/Final_03_1_-min_vycw6b.jpg",
+    image: "https://res.cloudinary.com/diqux3y0a/image/upload/v1752642124/Final_4-min_io9eve.jpg",
   },
   {
     id: 4,
     title: "NAVANAAMI",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752642124/Final_4-min_io9eve.jpg",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782764/Revised-01_enfwvq.jpg",
   },
   {
     id: 5,
     title: "BIG BULL PUB",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752642403/Gate_With_Tower_14-5-23-min_vdwx7b.jpg",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782808/v1-_1_ni2obk.jpg",
   },
   {
     id: 6,
     title: "Courtyard mansion",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752643596/CXGS2864_i35rjp.jpg",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782861/Final-03-_1_dpdg2x.jpg",
   },
   {
     id: 7,
     title: "Dwellings",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752643596/CXGS2864_i35rjp.jpg",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782923/Comm_View22_y093yy.jpg",
   },
   {
     id: 8,
     title: "Chirala Resort",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752643596/CXGS2864_i35rjp.jpg",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782959/scene-07_uwr9jp.jpg",
   },
   {
     id: 9,
     title: "ANANDA HOMES",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752643596/CXGS2864_i35rjp.jpg",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782997/03-_1_vsdhhd.jpg",
   },
   {
     id: 10,
@@ -107,32 +107,32 @@ const projects: Project[] = [
   {
     id: 20,
     title: "VINOD MALL",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752643596/CXGS2864_i35rjp.jpg",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784169/silpa-commercial-_1_zw3nzt.jpg",
   },
   {
     id: 21,
     title: "GANGAVARAM PORT OFFICE",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752643596/CXGS2864_i35rjp.jpg",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784222/41_eabhtj.jpg",
   },
   {
     id: 22,
     title: "OSR INFRA",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752643596/CXGS2864_i35rjp.jpg",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784279/011_gubux3.jpg",
   },
   {
     id: 23,
     title: "PERUPALEM beach front shiva temple",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752643596/CXGS2864_i35rjp.jpg",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784331/0101-_16_uletch.jpg",
   },
   {
     id: 24,
     title: "DP VILLA",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752643596/CXGS2864_i35rjp.jpg",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784357/scene-0101-_2_zwtzh0.jpg",
   },
   {
     id: 25,
     title: "YTD 450 SQYDS",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/f_auto,q_auto,w_600/v1752643596/CXGS2864_i35rjp.jpg",
+    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784371/450-syds-evening-view_ocglyi.jpg",
   },
   
 

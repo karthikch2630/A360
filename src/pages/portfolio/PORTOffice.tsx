@@ -2,11 +2,10 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 
 const images = [
-  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783406/Front-View_yoh6ik.jpg",
-  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783401/Front-Angle-View_gzbrhs.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784218/40_hsjfrm.jpg",
 ];
 
-const RRFarmHouse = () => {
+const PORTOffice = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to top on mount
   }, []);
@@ -19,7 +18,7 @@ const RRFarmHouse = () => {
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1 }}
-          src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783401/Front-Angle-View_gzbrhs.jpg"
+          src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784222/41_eabhtj.jpg"
           alt="Cover"
           className="h-full w-full object-cover"
         />
@@ -31,7 +30,7 @@ const RRFarmHouse = () => {
             className="text-white text-4xl font-bold drop-shadow-md"
           >
             <h1 className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-black/60 text-white px-6 py-3 text-2xl font-semibold rounded-md shadow-lg">
-              RR Farmhouse
+              Gangavaram Port Office
             </h1>
           </motion.h1>
         </div>
@@ -62,4 +61,4 @@ const RRFarmHouse = () => {
   );
 };
 
-export default RRFarmHouse;
+export default PORTOffice;

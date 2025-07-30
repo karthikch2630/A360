@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 
 const images = [
-  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783406/Front-View_yoh6ik.jpg",
-  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783401/Front-Angle-View_gzbrhs.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784379/street-Revised_fcx0de.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784375/450-Sqyds-Street_lilm8s.jpg",
 ];
 
-const RRFarmHouse = () => {
+const YTDYards = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to top on mount
   }, []);
@@ -19,7 +19,7 @@ const RRFarmHouse = () => {
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1 }}
-          src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783401/Front-Angle-View_gzbrhs.jpg"
+          src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784371/450-syds-evening-view_ocglyi.jpg"
           alt="Cover"
           className="h-full w-full object-cover"
         />
@@ -31,7 +31,7 @@ const RRFarmHouse = () => {
             className="text-white text-4xl font-bold drop-shadow-md"
           >
             <h1 className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-black/60 text-white px-6 py-3 text-2xl font-semibold rounded-md shadow-lg">
-              RR Farmhouse
+              YTD 450 Yards
             </h1>
           </motion.h1>
         </div>
@@ -62,4 +62,4 @@ const RRFarmHouse = () => {
   );
 };
 
-export default RRFarmHouse;
+export default YTDYards;
