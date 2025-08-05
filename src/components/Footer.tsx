@@ -13,7 +13,8 @@ const Footer = () => {
             className="w-28 h-auto mb-2"
           />
           <p className="text-gray-400 text-sm leading-relaxed">
-            Creating innovative architectural solutions that inspire and transform communities.
+            Creating innovative architectural solutions that inspire and
+            transform communities.
           </p>
         </div>
 
@@ -26,7 +27,7 @@ const Footer = () => {
                 { name: "About Us", href: "/about" },
                 { name: "Our Services", href: "/services" },
                 { name: "Portfolio", href: "/portfolio" },
-                {name: "blogs", href: "/blogs"},
+                { name: "blogs", href: "/blogs" },
                 { name: "Contact", href: "/contact" },
               ].map((link) => (
                 <li key={link.name}>
@@ -47,7 +48,12 @@ const Footer = () => {
           <div className="mt-10">
             <h4 className="text-lg font-semibold mb-2">Services</h4>
             <ul className="space-y-1 text-sm">
-              {["Architecture", "Interior Design", "Urban Planning", "Consulting"].map((service) => (
+              {[
+                "Architecture",
+                "Interior Design",
+                "Urban Planning",
+                "Consulting",
+              ].map((service) => (
                 <li key={service}>
                   <a
                     href="/services"
@@ -68,7 +74,8 @@ const Footer = () => {
             <div className="flex items-start gap-x-3">
               <MapPin className="w-5 h-5 text-white mt-1" />
               <span>
-                B5, Second Floor, Kapil Complex, KPHB 6th Phase, Kukatpally, Hyderabad - 500085
+                B5, Second Floor, Kapil Complex, KPHB 6th Phase, Kukatpally,
+                Hyderabad - 500085
               </span>
             </div>
             <div className="flex items-center gap-2">
@@ -85,30 +92,29 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="border-t border-gray-800 pt-4 text-center text-gray-500 text-xs sm:text-sm md:text-base">
-  <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-1 flex-wrap">
-    <span>© 2024 A360 Architecture. All rights reserved.</span>
-    <span className="hidden sm:inline">|</span>
-    <span className="sm:hidden">•</span>
-    <span className="flex items-center gap-1">
-      Designed by
-      <a
-        href="https://www.tactadvertising.in"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-1 text-gray-400 hover:text-white transition"
-        aria-label="Tact Advertising Website"
-      >
-        <img
-          src="https://res.cloudinary.com/diqux3y0a/image/upload/v1752647568/tact_favicon_z3qdye.png"
-          alt="Tact Logo"
-          className="w-4 h-4 object-contain"
-        />
-        <span>Tact Advertising</span>
-      </a>
-    </span>
-  </div>
-</div>
-
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-1 flex-wrap">
+          <span>© 2024 A360 Architecture. All rights reserved.</span>
+          <span className="hidden sm:inline">|</span>
+          <span className="sm:hidden">•</span>
+          <span className="flex items-center gap-1 ">
+            Designed by
+            <a
+              href="https://www.tactadvertising.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-gray-500 "
+              aria-label="Tact Advertising Website"
+            >
+              <img
+                src="https://res.cloudinary.com/diqux3y0a/image/upload/v1752647568/tact_favicon_z3qdye.png"
+                alt="Tact Logo"
+                className="w-4 h-4 object-contain"
+              />
+              <span>Tact Advertising</span>
+            </a>
+          </span>
+        </div>
+      </div>
     </footer>
   );
 };
