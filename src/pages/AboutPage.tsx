@@ -118,7 +118,7 @@ const AboutPage = () => {
                 key={idx}
                 className="text-center group transition duration-500 hover:scale-105"
               >
-                <div className="w-48 h-48 bg-black rounded-full mx-auto mb-6 overflow-hidden">
+                <div className="w-48 h-48 bg-black rounded-xl mx-auto mb-6 overflow-hidden">
                   <img
                     src={member.img}
                     alt={member.name}
