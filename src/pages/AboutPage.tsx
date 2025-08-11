@@ -23,42 +23,43 @@ const AboutPage = () => {
 
       {/* Philosophy Section */}
       <section className="py-20 bg-gray-900">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-10 items-center">
-            {/* Image Section */}
-            <div className="sm:w-[75%] sm:h-[75%] max-h-[500px] overflow-hidden rounded-lg shadow-lg">
-              <img
-                src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1754908270/scene-02-edit-_1_iu57wx.jpg"
-                alt="Philosophy"
-                className="rounded-lg shadow-lg object-cover w-full h-full max-h-[500px]"
-              />
-            </div>
+  <div className="container mx-auto px-6 max-w-5xl">
+    {/* Heading */}
+    <h2 className="text-4xl font-bold mb-8 text-center text-white hover:text-gray-300 transition duration-300">
+      Our Philosophy
+    </h2>
 
-            {/* Text Section */}
-            <div className="text-left">
-              <h2 className="text-4xl font-bold mb-4 hover:text-gray-300 transition duration-300">
-                Our Philosophy
-              </h2>
-              <p className="text-xl text-gray-400 mb-6 hover:text-white transition duration-300">
-                Our guiding philosophy centers on architectural honesty and the
-                importance of creating enriching spatial experiences. We adopt a
-                pragmatic approach that carefully considers the project's
-                context, client aspirations, materials, and technological
-                advancements to develop solutions that are both appropriate and
-                meaningful.
-              </p>
-              <p className="text-xl text-gray-400 hover:text-white transition duration-300">
-                Emphasizing modern, tropical architecture, we aim to balance
-                aesthetic appeal with functional excellence, respecting cultural
-                and environmental nuances. By engaging with diverse communities
-                and employing a multifaceted approach, a360studio is dedicated
-                to developing culturally sensitive, evolving design solutions
-                that foster authentic and impactful spatial experiences.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+    {/* Image */}
+    <div className="w-full h-[400px] sm:h-[500px] overflow-hidden rounded-lg shadow-lg mb-8">
+      <img
+        src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1754915694/scene-02-edit-_1_kxl0vx.jpg"
+        alt="Our Philosophy"
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+    {/* Content */}
+    <div className="space-y-6 text-center sm:text-left">
+      <p className="text-xl text-gray-400 hover:text-white transition duration-300">
+        Our guiding philosophy centers on architectural honesty and the
+        importance of creating enriching spatial experiences. We adopt a
+        pragmatic approach that carefully considers the project's context,
+        client aspirations, materials, and technological advancements to
+        develop solutions that are both appropriate and meaningful.
+      </p>
+      <p className="text-xl text-gray-400 hover:text-white transition duration-300">
+        Emphasizing modern, tropical architecture, we aim to balance aesthetic
+        appeal with functional excellence, respecting cultural and environmental
+        nuances. By engaging with diverse communities and employing a
+        multifaceted approach, a360studio is dedicated to developing culturally
+        sensitive, evolving design solutions that foster authentic and impactful
+        spatial experiences.
+      </p>
+    </div>
+  </div>
+</section>
+
+
 
       {/* Leadership Section */}
       <section className="py-20 bg-black">
@@ -95,7 +96,7 @@ const AboutPage = () => {
                 desc: "Specializes in structural systems and ensures technical excellence across all projects.",
                 img: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1754366529/Aishwarya_Taduka-_Lead_Technical_Architect_-03_xv1kch.jpg",
               },
-              
+
               {
                 name: "Naresh Chidgye",
                 role: "Technical Director",
@@ -124,8 +125,8 @@ const AboutPage = () => {
                     src={member.img}
                     alt={member.name}
                     className={`w-full h-full object-cover transition duration-500 ease-in-out group-hover:grayscale-0 grayscale ${['Md Saleem Pasha', 'Sindhuja Gundeti', 'Naresh Chidgye'].includes(member.name)
-                        ? 'object-[50%_20%]'
-                        : 'object-center'
+                      ? 'object-[50%_20%]'
+                      : 'object-center'
                       }`}
                   />
                 </div>

@@ -8,7 +8,7 @@ interface ServiceItem {
 
 const services: ServiceItem[] = [
   {
-    name: "Architecture Design",
+    name: "Architectural Design",
     iconPath:
       "https://res.cloudinary.com/diqux3y0a/image/upload/v1753450311/Architecture_Design_u4lmvj.svg",
     description:

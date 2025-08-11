@@ -1,5 +1,5 @@
 import { Mail, Phone, MapPin } from "lucide-react";
-import { href } from "react-router-dom";
+
 
 const Footer = () => {
   return (
@@ -48,7 +48,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-2">Services</h4>
             <ul className="space-y-1 text-sm">
               {[
-                "Architecture Design",
+                "Architectural Design",
                 "Interior Design",
                 "Urban Design",
                 "Master Planning",
@@ -71,7 +71,7 @@ const Footer = () => {
           <h4 className="text-lg font-semibold mb-2">Contact Info</h4>
           <div className="space-y-2 text-sm text-gray-400">
             <div className="flex items-start gap-x-3">
-              <MapPin className="w-5 h-5 text-white mt-1" />
+              <MapPin className="w-9 h-9 text-white mt-1" />
               <span>
                 B5, Second Floor, Kapil Complex, KPHB 6th Phase, Kukatpally,
                 Hyderabad - 500085

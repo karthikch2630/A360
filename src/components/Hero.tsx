@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const backgroundImages = [
   {
     url: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753778703/Club-House-Aerial---03-14-5-23_cnckxf.jpg",
-    name: (<>BuildDox jj <br /> Bhuvi</>),
+    name: (<>Bhuvi by <br /> Vasavi BuildDox </>),
   },
   {
     url: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753445377/09_sswiep.jpg",
@@ -25,7 +25,7 @@ const backgroundImages = [
   },
   {
     url: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753445375/02_x7k1g3.jpg",
-    name: (<>Bhuvi by <br /> Vasavi BuilDox</>),
+    name: (<>Bhuvi by <br /> Vasavi BuildDox</>),
   },
 ];
 

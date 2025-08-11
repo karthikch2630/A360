@@ -9,7 +9,7 @@ interface Service {
 
 const services: Service[] = [
   {
-    name: "Architecture Design",
+    name: "Architectural Design",
     iconPath: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753450311/Architecture_Design_u4lmvj.svg",
     description:
       "Our architectural services span conceptualization to construction. We create inspiring, functional spaces that reflect client visions while considering environmental and cultural contexts. Whether for residential, commercial, or institutional needs, our designs achieve balance in aesthetics, utility, sustainability, and structural integrity for lasting impact.",

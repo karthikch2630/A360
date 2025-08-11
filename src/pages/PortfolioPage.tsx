@@ -10,7 +10,7 @@ interface Project {
 
 const projects: Project[] = [
   { id: 1, title: "Vasavi BuildDox by Bhuvi", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782527/Aerial-View-2-15-5-23_iblkba.jpg" },
-  { id: 2, title: "BuildDox JJ Gardens", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782689/View-04_xfnfkg.jpg" },
+  { id: 2, title: "Bhuvi by Vasavi BuildDox", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782689/View-04_xfnfkg.jpg" },
   { id: 3, title: "Scintilla Apartment", image: "https://res.cloudinary.com/diqux3y0a/image/upload/v1752642124/Final_4-min_io9eve.jpg" },
   { id: 4, title: "Navanaami", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782764/Revised-01_enfwvq.jpg" },
   { id: 5, title: "Big Bull Pub", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782808/v1-_1_ni2obk.jpg" },

@@ -58,7 +58,7 @@ function App() {
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/portfolio/vasavi-builddox-by-bhuvi" element={<VasaviBuildDoxBhuvi />} />
-            <Route path="/portfolio/builddox-jj-gardens" element={<BuildDoxGarden />} />
+            <Route path="/portfolio/bhuvi-by-vasavi-builddox" element={<BuildDoxGarden />} />
             <Route path="/portfolio/scintilla-apartment" element={<ScintillaApartments />} />
             <Route path="/portfolio/navanaami" element={<NavaNaami />} />
             <Route path="/portfolio/big-bull-pub" element={<BigBullPub />} />
