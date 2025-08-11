@@ -6,7 +6,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
 import PortfolioPage from "./pages/PortfolioPage";
-import BlogListPage from "./pages/BlogListPage";
+
 import ContactPage from "./pages/ContactPage";
 import ScrollToTop from "./components/ScrollToTop";
 import VasaviBuildDoxBhuvi from "./pages/portfolio/VasaviBuildDoxBhuvi";
@@ -35,8 +35,7 @@ import Shiva from "./pages/portfolio/perupalem";
 import DPVilla from "./pages/portfolio/DPVilla";
 import YTDYards from "./pages/portfolio/YTD450Yards";
 
-//blog posts
-import ModernArchitecturePage from "./pages/blogs/ModernArchStruct";
+
 
 
 
@@ -49,18 +48,17 @@ function App() {
         <Header />
         <LeftSidebar />
         <ScrollToTop />
-        
+
         {/* Main content area */}
         <main>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/services" element={<ServicesPage />} />
-            <Route path="/portfolio" element={<PortfolioPage />} /> 
-            <Route path="/blogs" element={<BlogListPage/>}/>          
+            <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/portfolio/vasavibuildox-bhuvi" element={<VasaviBuildDoxBhuvi />} />
-            <Route path="/portfolio/buildox-jj-gardens" element={<BuildDoxGarden />} />
+            <Route path="/portfolio/vasavi-builddox-by-bhuvi" element={<VasaviBuildDoxBhuvi />} />
+            <Route path="/portfolio/builddox-jj-gardens" element={<BuildDoxGarden />} />
             <Route path="/portfolio/scintilla-apartment" element={<ScintillaApartments />} />
             <Route path="/portfolio/navanaami" element={<NavaNaami />} />
             <Route path="/portfolio/big-bull-pub" element={<BigBullPub />} />
@@ -77,18 +75,19 @@ function App() {
             <Route path="/portfolio/ds-dwellings" element={<DSDwellings />} />
             <Route path="/portfolio/pulsus-corporate-office" element={<PulsusCorpOffice />} />
             <Route path="/portfolio/sahiti-commercial" element={<SahitiCom />} />
-            <Route path="/portfolio/rr-farmhouse" element={<RRFarmHouse/>} />
+            <Route path="/portfolio/rr-farmhouse" element={<RRFarmHouse />} />
             <Route path="/portfolio/vinod-mall" element={<VinodMall />} />
-            <Route path="/portfolio/gangavaram-port-office" element={<PORTOffice/>} />
+            <Route path="/portfolio/gangavaram-port-office" element={<PORTOffice />} />
             <Route path="/portfolio/osr-infra" element={<OSRInfra />} />
-            <Route path="/portfolio/perupalem-beach-front-shiva-temple" element={<Shiva />} />
+            <Route path="/portfolio/perupalem-beachfront-shiva-temple" element={<Shiva />} />
             <Route path="/portfolio/dp-villa" element={<DPVilla />} />
-            <Route path="/portifolio/ytd-450-yards" element={<YTDYards />} />
-            
+            <Route path="/portfolio/ytd-450-sq-yds" element={<YTDYards />} />
+
+
 
             {/*Blog Routes*/}
-            <Route path="/blogs/modern-architectural-structures" element={<ModernArchitecturePage/>} />
-            
+
+
           </Routes>
         </main>
         <Footer />

@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const backgroundImages = [
   {
     url: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753778703/Club-House-Aerial---03-14-5-23_cnckxf.jpg",
-    name: (<>BuildBox jj <br /> Gardens</>),
+    name: (<>BuildDox jj <br /> Bhuvi</>),
   },
   {
     url: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753445377/09_sswiep.jpg",
@@ -25,7 +25,7 @@ const backgroundImages = [
   },
   {
     url: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753445375/02_x7k1g3.jpg",
-    name: (<>Vasavi BuildBox <br /> Bhuvi</>),
+    name: (<>Bhuvi by <br /> Vasavi BuilDox</>),
   },
 ];
 
@@ -78,11 +78,8 @@ const Hero = () => {
               ease: [0.43, 0.13, 0.23, 0.96],
             }}
           />
-
         </AnimatePresence>
       </div>
-
-
 
       {/* Arrows */}
       {/* Left Chevron */}
@@ -112,15 +109,14 @@ const Hero = () => {
             animate={{ opacity: 1, y: 10 }}
             exit={{ opacity: 0, y: 20 }}
             transition={{
-              duration: 3.5,      // slow and elegant text transition
-              delay: 1.3,         // match image duration — image first, then text
+              duration: 3.5, // slow and elegant text transition
+              delay: 1.3, // match image duration — image first, then text
               ease: [0.43, 0.13, 0.23, 0.96],
             }}
             className="text-white text-2xl sm:text-4xl md:text-5xl font-semibold tracking-wide drop-shadow-lg text-right sm:text-[18px] md:text-[24px] lg:text-[32px] xl:text-[40px]"
           >
             {backgroundImages[currentImage].name}
           </motion.h1>
-
         </AnimatePresence>
       </div>
       <div
@@ -129,7 +125,7 @@ const Hero = () => {
              flex flex-col sm:flex-row items-center gap-1 sm:gap-4 w-[90%] sm:w-auto max-w-sm sm:max-w-none"
       >
         <a
-          href="mailto:a360studio.shiva@gmail.com"
+          href="mailto:a360studiohyd@gmail.com"
           className="flex items-center gap-1 hover:text-gray-300 transition"
         >
           <Mail size={14} />
@@ -139,14 +135,13 @@ const Hero = () => {
         <span className="hidden sm:inline text-gray-400">|</span>
 
         <a
-          href="tel:+917673989854"
+          href="tel:+917013306457"
           className="flex items-center gap-1 hover:text-gray-300 transition"
         >
           <Phone size={14} />
           <span>+91 7013306457</span>
         </a>
       </div>
-
     </section>
   );
 };

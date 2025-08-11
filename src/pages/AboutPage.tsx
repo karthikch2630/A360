@@ -28,7 +28,7 @@ const AboutPage = () => {
             {/* Image Section */}
             <div className="sm:w-[75%] sm:h-[75%] max-h-[500px] overflow-hidden rounded-lg shadow-lg">
               <img
-                src="https://res.cloudinary.com/diqux3y0a/image/upload/v1753434032/40503_a9dzf8.jpg"
+                src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1754908270/scene-02-edit-_1_iu57wx.jpg"
                 alt="Philosophy"
                 className="rounded-lg shadow-lg object-cover w-full h-full max-h-[500px]"
               />
@@ -84,17 +84,18 @@ const AboutPage = () => {
                 img: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1754366401/Sivaramakrishna_j_-Founder_Principal_Architect-01-_gkj59q.jpg",
               },
               {
-                name: "Aishwarya Taduka",
-                role: "Lead Technical Architect",
-                desc: "Specializes in structural systems and ensures technical excellence across all projects.",
-                img: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1754366529/Aishwarya_Taduka-_Lead_Technical_Architect_-03_xv1kch.jpg",
-              },
-              {
                 name: "Md Saleem Pasha",
                 role: "Design Director",
                 desc: "Directs the creative vision and ensures cohesive, cutting-edge design solutions.",
                 img: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1754366725/Md_Saleem_pasha_-_Design_Director-02_p8hosz.jpg",
               },
+              {
+                name: "Aishwarya Taduka",
+                role: "Lead Technical Architect",
+                desc: "Specializes in structural systems and ensures technical excellence across all projects.",
+                img: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1754366529/Aishwarya_Taduka-_Lead_Technical_Architect_-03_xv1kch.jpg",
+              },
+              
               {
                 name: "Naresh Chidgye",
                 role: "Technical Director",

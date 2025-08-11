@@ -9,6 +9,12 @@ interface Service {
 
 const services: Service[] = [
   {
+    name: "Architecture Design",
+    iconPath: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753450311/Architecture_Design_u4lmvj.svg",
+    description:
+      "Our architectural services span conceptualization to construction. We create inspiring, functional spaces that reflect client visions while considering environmental and cultural contexts. Whether for residential, commercial, or institutional needs, our designs achieve balance in aesthetics, utility, sustainability, and structural integrity for lasting impact.",
+  },
+  {
     name: "Master Planning",
     iconPath: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753450508/Master_Planning_xtasmi.svg",
     description:
@@ -25,12 +31,6 @@ const services: Service[] = [
     iconPath: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753450532/infrastructures_vqhblo.svg",
     description:
       "We deliver end-to-end infrastructure design services, covering roads, bridges, drainage, and utilities. Our designs prioritize durability, sustainability, and efficiency. By integrating advanced technologies and regulatory standards, we build the foundation for resilient cities and smart communities prepared for future urban challenges.",
-  },
-  {
-    name: "Architecture Design",
-    iconPath: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753450311/Architecture_Design_u4lmvj.svg",
-    description:
-      "Our architectural services span conceptualization to construction. We create inspiring, functional spaces that reflect client visions while considering environmental and cultural contexts. Whether for residential, commercial, or institutional needs, our designs achieve balance in aesthetics, utility, sustainability, and structural integrity for lasting impact.",
   },
   {
     name: "Structural Design",
@@ -141,7 +141,7 @@ export default function ServicesPage() {
     Our Design Process
   </h2>
   <img
-    src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1753790708/team-one-design-process-scaled_siafut.webp"
+    src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1754896551/image_bedyjq.webp"
     alt="A360 Design Process"
     className="mx-auto w-full max-w-3xl h-auto rounded-md shadow-lg"
   />

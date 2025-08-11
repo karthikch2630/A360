@@ -9,136 +9,33 @@ interface Project {
 }
 
 const projects: Project[] = [
-  {
-    id: 1,
-    title: "VASAVIBUILDOX BHUVI",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782527/Aerial-View-2-15-5-23_iblkba.jpg",
-  },
-  {
-    id: 2,
-    title: "BUILDOX JJ GARDENS",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782689/View-04_xfnfkg.jpg",
-  },
-  {
-    id: 3,
-    title: "SCINTILLA APARTMENT",
-    image: "https://res.cloudinary.com/diqux3y0a/image/upload/v1752642124/Final_4-min_io9eve.jpg",
-  },
-  {
-    id: 4,
-    title: "NAVANAAMI",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782764/Revised-01_enfwvq.jpg",
-  },
-  {
-    id: 5,
-    title: "BIG BULL PUB",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782808/v1-_1_ni2obk.jpg",
-  },
-  {
-    id: 6,
-    title: "Courtyard mansion",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782861/Final-03-_1_dpdg2x.jpg",
-  },
-  {
-    id: 7,
-    title: "Dwellings",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782923/Comm_View22_y093yy.jpg",
-  },
-  {
-    id: 8,
-    title: "Chirala Resort",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782959/scene-07_uwr9jp.jpg",
-  },
-  {
-    id: 9,
-    title: "ANANDA HOMES",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782997/03-_1_vsdhhd.jpg",
-  },
-  {
-    id: 10,
-    title: "ASR MEMORIAL",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783065/v-2-grey_aktulx.jpg",
-  },
-  {
-    id: 11,
-    title: "RR HOMES",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783103/06-copy_hc2lmq.jpg",
-  },
-  {
-    id: 12,
-    title: "SAHITI DPS",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783126/CXGS2864_ppdzti.jpg",
-  },
-  {
-    id: 13,
-    title: "SINDHUJA CONSTRUCTIONS",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783173/5_fe5apm.jpg",
-  },
-  {
-    id: 14,
-    title: "CRDA OFFICE",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783217/SCENE-04_svfvwl.jpg",
-  },
-  {
-    id: 15,
-    title: "PRASAD COMMERCIAL BUILDING",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783258/c-11_ec7vzo.jpg",
-  },
-  {
-    id: 16,
-    title: "DS DWELLINGS",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783298/4-copy_niv5dv.jpg",
-  },
-  {
-    id: 17,
-    title: "PULSUS corporate office",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783346/WTFG4143_xqsxaz.jpg",
-  },
-  {
-    id: 18,
-    title: "SAHITI COMMERCIAL",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783368/GQAH1053_x5uqpa.jpg",
-  },
-  {
-    id: 19,
-    title: "RR FARMHOUSE",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783401/Front-Angle-View_gzbrhs.jpg",
-  },
-  {
-    id: 20,
-    title: "VINOD MALL",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784169/silpa-commercial-_1_zw3nzt.jpg",
-  },
-  {
-    id: 21,
-    title: "GANGAVARAM PORT OFFICE",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784222/41_eabhtj.jpg",
-  },
-  {
-    id: 22,
-    title: "OSR INFRA",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784279/011_gubux3.jpg",
-  },
-  {
-    id: 23,
-    title: "PERUPALEM beach front shiva temple",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784331/0101-_16_uletch.jpg",
-  },
-  {
-    id: 24,
-    title: "DP VILLA",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784357/scene-0101-_2_zwtzh0.jpg",
-  },
-  {
-    id: 25,
-    title: "YTD 450 SQYDS",
-    image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784371/450-syds-evening-view_ocglyi.jpg",
-  },
-  
-
-  
-
+  { id: 1, title: "Vasavi BuildDox by Bhuvi", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782527/Aerial-View-2-15-5-23_iblkba.jpg" },
+  { id: 2, title: "BuildDox JJ Gardens", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782689/View-04_xfnfkg.jpg" },
+  { id: 3, title: "Scintilla Apartment", image: "https://res.cloudinary.com/diqux3y0a/image/upload/v1752642124/Final_4-min_io9eve.jpg" },
+  { id: 4, title: "Navanaami", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782764/Revised-01_enfwvq.jpg" },
+  { id: 5, title: "Big Bull Pub", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782808/v1-_1_ni2obk.jpg" },
+  { id: 6, title: "Courtyard Mansion", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782861/Final-03-_1_dpdg2x.jpg" },
+  { id: 7, title: "Dwellings", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782923/Comm_View22_y093yy.jpg" },
+  { id: 8, title: "Chirala Resort", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782959/scene-07_uwr9jp.jpg" },
+  { id: 9, title: "Ananda Homes", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782997/03-_1_vsdhhd.jpg" },
+  { id: 10, title: "ASR Memorial", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783065/v-2-grey_aktulx.jpg" },
+  { id: 11, title: "RR Homes", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783103/06-copy_hc2lmq.jpg" },
+  { id: 12, title: "Sahiti DPS", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783126/CXGS2864_ppdzti.jpg" },
+  { id: 13, title: "Sindhuja Constructions", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783173/5_fe5apm.jpg" },
+  { id: 14, title: "CRDA Office", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783217/SCENE-04_svfvwl.jpg" },
+  { id: 15, title: "Prasad Commercial Building", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783258/c-11_ec7vzo.jpg" },
+  { id: 16, title: "DS Dwellings", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783298/4-copy_niv5dv.jpg" },
+  { id: 17, title: "Pulsus Corporate Office", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783346/WTFG4143_xqsxaz.jpg" },
+  { id: 18, title: "Sahiti Commercial", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783368/GQAH1053_x5uqpa.jpg" },
+  { id: 19, title: "RR Farmhouse", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753783401/Front-Angle-View_gzbrhs.jpg" },
+  { id: 20, title: "Vinod Mall", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784169/silpa-commercial-_1_zw3nzt.jpg" },
+  { id: 21, title: "Gangavaram Port Office", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784222/41_eabhtj.jpg" },
+  { id: 22, title: "OSR Infra", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784279/011_gubux3.jpg" },
+  { id: 23, title: "Perupalem Beachfront Shiva Temple", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784331/0101-_16_uletch.jpg" },
+  { id: 24, title: "DP Villa", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784357/scene-0101-_2_zwtzh0.jpg" },
+  { id: 25, title: "YTD 450 Sq Yds", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753784371/450-syds-evening-view_ocglyi.jpg" }
 ];
+
 
 const PortfolioPage: React.FC = () => {
   return (
@@ -173,7 +70,7 @@ const PortfolioPage: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-8 lg:px-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {projects.map((project) => (
-              <Link to={`/portfolio/${project.title.toLowerCase().replace(/\s+/g, "-")}`}key={project.id.toString()}>
+              <Link to={`/portfolio/${project.title.toLowerCase().replace(/\s+/g, "-")}`} key={project.id.toString()}>
                 <motion.div
                   className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                   whileHover={{ scale: 1.03 }}

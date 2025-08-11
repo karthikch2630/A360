@@ -40,18 +40,9 @@ const LeftSidebar = () => {
               size={18}
             />
           </a>
+          
           <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <TwitterIcon
-              className="text-gray-400 hover:text-white transition-colors duration-300"
-              size={18}
-            />
-          </a>
-          <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/a360studiohyd/"
             target="_blank"
             rel="noopener noreferrer"
           >
