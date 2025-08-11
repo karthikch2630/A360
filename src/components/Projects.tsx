@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 
-const projects: Project[] = [
+const projects = [
   { id: 1, title: "Vasavi BuildDox by Bhuvi", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782527/Aerial-View-2-15-5-23_iblkba.jpg" },
   { id: 2, title: "Bhuvi by Vasavi BuildDox", image: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782689/View-04_xfnfkg.jpg" },
   { id: 3, title: "Scintilla Apartment", image: "https://res.cloudinary.com/diqux3y0a/image/upload/v1752642124/Final_4-min_io9eve.jpg" },

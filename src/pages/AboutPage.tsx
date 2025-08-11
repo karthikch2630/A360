@@ -30,13 +30,14 @@ const AboutPage = () => {
     </h2>
 
     {/* Image */}
-    <div className="w-full h-[400px] sm:h-[500px] overflow-hidden rounded-lg shadow-lg mb-8">
-      <img
-        src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1754916561/scene-02-edit-_1_jcxjyy.jpg"
-        alt="Our Philosophy"
-        className="w-full h-full object-cover"
-      />
-    </div>
+    <div className="w-full overflow-hidden rounded-lg shadow-lg mb-8">
+  <img
+    src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1754917113/scene-02_edit_1_copy_w94o7l.png"
+    alt="Our Philosophy"
+    className="w-full h-auto object-contain"
+  />
+</div>
+
 
     {/* Content */}
     <div className="space-y-6 text-center sm:text-left">
