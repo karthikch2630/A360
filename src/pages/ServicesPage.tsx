@@ -21,7 +21,7 @@ const services: Service[] = [
       "Master planning provides a visionary roadmap for land use and infrastructure. We develop cohesive strategies that integrate urban growth, sustainability, transportation, green spaces, and community wellbeing. Our solutions ensure balanced development aligned with future needs, supporting smart cities, campuses, and industrial zones with scalable, long-term frameworks.",
   },
   {
-    name: "Urban Designing",
+    name: "Urban Design",
     iconPath: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753450368/Urban_Designing_yiq7ce.svg",
     description:
       "Urban design blends architecture, landscape, and public policy to shape the built environment. We design walkable neighborhoods, vibrant public spaces, and accessible urban layouts that enhance community interaction, mobility, and aesthetics. Our team ensures functionality and identity are embedded in every urban environment we shape.",
@@ -39,7 +39,7 @@ const services: Service[] = [
       "Structural design ensures safety, stability, and strength in construction. We use advanced analysis tools to create cost-effective and durable frameworks for buildings and infrastructure. Our solutions meet all relevant codes and are tailored to resist seismic, wind, and load stresses, ensuring project reliability.",
   },
   {
-    name: "Fire Design",
+    name: "Fire Drawings",
     iconPath: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753450581/Fire_Design_fytrfb.svg",
     description:
       "We develop fire protection strategies that align with local and international codes. Our services include sprinkler systems, smoke control, evacuation planning, and fire-resistant materials. With a focus on occupant safety and property protection, we create robust fire response frameworks for various building types.",

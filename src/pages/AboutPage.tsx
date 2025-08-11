@@ -32,7 +32,7 @@ const AboutPage = () => {
     {/* Image */}
     <div className="w-full h-[400px] sm:h-[500px] overflow-hidden rounded-lg shadow-lg mb-8">
       <img
-        src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1754915694/scene-02-edit-_1_kxl0vx.jpg"
+        src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1754916561/scene-02-edit-_1_jcxjyy.jpg"
         alt="Our Philosophy"
         className="w-full h-full object-cover"
       />
