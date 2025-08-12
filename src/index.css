@@ -34,3 +34,7 @@ body {
   text-decoration: none;
 }
 
+.zoom-img {
+  transform: scale(2); /* Zoom in 10% */
+  transition: transform 0.3s ease;
+}

@@ -23,44 +23,41 @@ const AboutPage = () => {
 
       {/* Philosophy Section */}
       <section className="py-20 bg-gray-900">
-  <div className="container mx-auto px-6 max-w-5xl">
-    {/* Heading */}
-    <h2 className="text-4xl font-bold mb-8 text-center text-white hover:text-gray-300 transition duration-300">
-      Our Philosophy
-    </h2>
+        <div className="container mx-auto px-6 max-w-5xl">
+          {/* Heading */}
+          <h2 className="text-4xl font-bold mb-8 text-center text-white hover:text-gray-300 transition duration-300">
+            Our Philosophy
+          </h2>
 
-    {/* Image */}
-    <div className="w-full overflow-hidden rounded-lg shadow-lg mb-8">
-  <img
-    src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1754917113/scene-02_edit_1_copy_w94o7l.png"
-    alt="Our Philosophy"
-    className="w-full h-auto object-contain"
-  />
-</div>
+          {/* Image */}
+          <div className="w-full overflow-hidden rounded-lg shadow-lg mb-8">
+            <img
+              src="https://res.cloudinary.com/djnyc9yqk/image/upload/v1754980885/scene-02_edit_unpaul.png"
+              alt="Our Philosophy"
+              className="w-full h-auto object-contain"
+            />
+          </div>
 
-
-    {/* Content */}
-    <div className="space-y-6 text-center sm:text-left">
-      <p className="text-xl text-gray-400 hover:text-white transition duration-300">
-        Our guiding philosophy centers on architectural honesty and the
-        importance of creating enriching spatial experiences. We adopt a
-        pragmatic approach that carefully considers the project's context,
-        client aspirations, materials, and technological advancements to
-        develop solutions that are both appropriate and meaningful.
-      </p>
-      <p className="text-xl text-gray-400 hover:text-white transition duration-300">
-        Emphasizing modern, tropical architecture, we aim to balance aesthetic
-        appeal with functional excellence, respecting cultural and environmental
-        nuances. By engaging with diverse communities and employing a
-        multifaceted approach, a360studio is dedicated to developing culturally
-        sensitive, evolving design solutions that foster authentic and impactful
-        spatial experiences.
-      </p>
-    </div>
-  </div>
-</section>
-
-
+          {/* Content */}
+          <div className="space-y-6 text-center sm:text-left">
+            <p className="text-xl text-gray-400 hover:text-white transition duration-300">
+              Our guiding philosophy centers on architectural honesty and the
+              importance of creating enriching spatial experiences. We adopt a
+              pragmatic approach that carefully considers the project's context,
+              client aspirations, materials, and technological advancements to
+              develop solutions that are both appropriate and meaningful.
+            </p>
+            <p className="text-xl text-gray-400 hover:text-white transition duration-300">
+              Emphasizing modern, tropical architecture, we aim to balance
+              aesthetic appeal with functional excellence, respecting cultural
+              and environmental nuances. By engaging with diverse communities
+              and employing a multifaceted approach, a360studio is dedicated to
+              developing culturally sensitive, evolving design solutions that
+              foster authentic and impactful spatial experiences.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Leadership Section */}
       <section className="py-20 bg-black">
@@ -80,10 +77,11 @@ const AboutPage = () => {
             {/* Team Member Cards */}
             {[
               {
-                name: "Siva Rama Krishna J",
+                name: "Shhivaa RamaKriishna J",
                 role: "Founder & Principal Architect",
                 desc: "Visionary leader driving innovative architectural designs and strategic direction of the firm.",
-                img: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1754366401/Sivaramakrishna_j_-Founder_Principal_Architect-01-_gkj59q.jpg",
+                img: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1754982210/Sivaramakrishna_j_-Founder_Principal_Architect-01-_gkj59q_wzmahy.jpg",
+                
               },
               {
                 name: "Md Saleem Pasha",
@@ -115,7 +113,7 @@ const AboutPage = () => {
                 role: "Business Developer",
                 desc: "Focuses on client relationships, market expansion, and driving new business opportunities.",
                 img: "https://res.cloudinary.com/djnyc9yqk/image/upload/v1754368308/siva_polamarasetti_-_Business_Developer_-06_jvxx9o.jpg",
-              }
+              },
             ].map((member, idx) => (
               <div
                 key={idx}
@@ -125,10 +123,15 @@ const AboutPage = () => {
                   <img
                     src={member.img}
                     alt={member.name}
-                    className={`w-full h-full object-cover transition duration-500 ease-in-out group-hover:grayscale-0 grayscale ${['Md Saleem Pasha', 'Sindhuja Gundeti', 'Naresh Chidgye'].includes(member.name)
-                      ? 'object-[50%_20%]'
-                      : 'object-center'
-                      }`}
+                    className={`w-full h-full object-cover transition duration-500 ease-in-out group-hover:grayscale-0 grayscale ${
+                      [
+                        "Md Saleem Pasha",
+                        "Sindhuja Gundeti",
+                        "Naresh Chidgye",
+                      ].includes(member.name)
+                        ? "object-[50%_20%]"
+                        : "object-center"
+                    }`}
                   />
                 </div>
                 <h3 className="text-xl font-bold mb-2">{member.name}</h3>

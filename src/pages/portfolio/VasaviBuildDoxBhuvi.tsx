@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const images = [
-  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782527/Gate-With-Tower--14-5-23_t93z06.jpg",
+  "https://res.cloudinary.com/djnyc9yqk/image/upload/v1754981645/Gate-With-Tower--14-5-23_ssu7b9.jpg",
   "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782527/9-_1_tij5cy.jpg",
   "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782527/Club-House-Aerial---03-14-5-23_qa6vwp.jpg",
   "https://res.cloudinary.com/djnyc9yqk/image/upload/v1753782526/Basketball-Court--15-4-23_1_irnpms.jpg",
